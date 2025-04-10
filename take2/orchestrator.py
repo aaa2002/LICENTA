@@ -1,7 +1,7 @@
-# orchestrator.py
 from agents.classic import FakeNewsAgent
 from agents.wiki_check import WikiAgent
 from agents.coherence import CoherenceAgent
+from take2.agents.scrape.main import ScraperAgent
 
 if __name__ == "__main__":
     text = "Breaking news: Aliens have landed in Times Square to discuss trade deals."
@@ -15,6 +15,9 @@ if __name__ == "__main__":
     coherence_agent = CoherenceAgent()
     coherence_result = coherence_agent.analyze(text)
 
+    scraper_agent = ScraperAgent()
+    scraper_result = scraper_agent.analyze(text)
+
     print("\nFake News Analysis Result:")
     print(fn_result)
 
@@ -23,3 +26,6 @@ if __name__ == "__main__":
 
     print("\nText Coherence Analysis Result:")
     print(coherence_result)
+
+    print("\nScraper Analysis Result:")
+    print(scraper_result)
