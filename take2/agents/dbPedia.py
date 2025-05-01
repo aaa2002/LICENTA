@@ -1,7 +1,7 @@
 import spacy
 import wikipedia
 from SPARQLWrapper import SPARQLWrapper, JSON
-from take2.agents.scrape.llm import query_ollama
+from take2.scraper.llm import query_ollama
 import re
 
 class DbPediaAgent:
