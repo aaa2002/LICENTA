@@ -17,7 +17,18 @@ def query_ollama(prompt: str, model="llama3"):
 # === Step 1: Turn claim into question ===
 def claim_to_question(claim: str):
     prompt = (
-        "You are an assistant that reformulates claims into questions. W-questions are needed, i.e. questions which start with: Who, What, When, How.\n\n"
+        "You are an assistant that reformulates claims into questions.\n\n"
+        "W-questions or Did-questions are needed, i.e. questions which start with: Did, Who, What, When, How.\n\n"
+        "Examples:\n"
+        "1. Claim: \"The sky is blue.\"\n"
+        "   Question: \"Is the sky blue?\"\n"
+        "2. Claim: \"The Earth revolves around the Sun.\"\n"
+        "   Question: \"Does the Earth revolve around the Sun?\"\n"
+        "3. Claim: \"Scientists discovered new planet.\"\n"
+        "   Question: \"Did scientists discover a new planet?\"\n\n"
+        "4. Claim: \"The car was invented in 1886.\"\n"
+        "   Question: \"When was the car invented?\"\n"
+        "End of examples.\n\n"
         "Respond ONLY with the question. Does not matter if it is disinformation.\n\n"
         f"Claim: \"{claim}\"\n"
         "Question:"
@@ -30,7 +41,7 @@ def compare_graphs_llm(user_claim, user_triplets, web_triplets, model="llama3"):
         "You are a reasoning agent that checks if a claim is factually correct based on extracted knowledge.\n\n"
         "ONLY respond in JSON format like this:\n"
         "{\n"
-        "  \"supported\": true or false,\n"
+        "  \"label\": \"real\" or \"fake\",\n"
         "  \"confidence\": float between 0 and 1,\n"
         "  \"explanation\": \"...\"\n"
         "}\n\n"
@@ -49,5 +60,5 @@ def compare_graphs_llm(user_claim, user_triplets, web_triplets, model="llama3"):
             try:
                 return json.loads(match.group(0))
             except Exception:
-                return {"supported": None, "confidence": 0.0, "explanation": "Invalid JSON format in LLM response"}
-        return {"supported": None, "confidence": 0.0, "explanation": "No JSON found in LLM response"}
+                return {"label": None, "confidence": 0.0, "explanation": "Invalid JSON format in LLM response"}
+        return {"label": None, "confidence": 0.0, "explanation": "No JSON found in LLM response"}

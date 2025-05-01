@@ -1,7 +1,8 @@
 import joblib
 import numpy as np
 from sklearn.feature_extraction.text import HashingVectorizer
-
+from take2.scraper.search import get_search_results
+from take2.scraper.llm import claim_to_question
 
 class StreamingFakeNewsAgent:
     def __init__(self,
@@ -97,3 +98,27 @@ class StreamingFakeNewsAgent:
         except Exception as e:
             print(f"Batch update error: {str(e)}")
             return False
+
+    def analyze_with_scraper_update(self, text):
+        try:
+            question = claim_to_question(text)
+            print(f"Generated Question: {question}")
+
+            search_results = get_search_results(question, 10)
+            print(f"Search Results Count: {len(search_results)}")
+            if not search_results:
+                print(f"[Warning] No search results for: {question}")
+
+            for result in search_results:
+                success = self.update(result, 'real')
+                if not success:
+                    print(f"[Warning] Failed to update with result: {result[:100]}...")
+
+            result = self.analyze(text)
+            return result
+        except Exception as e:
+            return {
+                'error': str(e),
+                'label': 'error',
+                'confidence': 0.0
+            }

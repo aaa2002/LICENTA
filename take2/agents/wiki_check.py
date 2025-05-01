@@ -53,11 +53,11 @@ class WikiAgent:
         wiki_facts = " ".join([self.search_wikipedia(term) for term in search_terms])
 
         if not wiki_facts.strip():
-            return {'label': 'FAKE', 'confidence': 0.9}
+            return {'label': 'fake', 'confidence': 0.9}
 
         score = self.keyword_overlap(text, wiki_facts)
         confidence = round(1.0 - score, 3)
-        label = 'FAKE' if confidence > 0.5 else 'REAL'
+        label = 'fake' if confidence > 0.5 else 'real'
 
         return {
             'label': label,

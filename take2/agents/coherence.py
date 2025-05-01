@@ -6,7 +6,7 @@ SYSTEM_PROMPT = (
     "It is not important if the text is short or long, but rather if it has good sentence structure.\n\n"
     "Respond in json format:\n"
     "{\n"
-    "   coherence: <boolean>,\n"
+    "   label: 'real' or 'fake',\n"
     "   confidence: <float>,\n"
     "   explanation: <string>\n"
     "}\n"
