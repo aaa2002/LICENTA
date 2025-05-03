@@ -6,9 +6,9 @@ from take2.scraper.llm import claim_to_question
 
 class StreamingFakeNewsAgent:
     def __init__(self,
-                 vectorizer_path="./agents/classic/saved_models/hashing_vectorizer.joblib",
-                 model_path="./agents/classic/saved_models/online_fake_news_model.joblib",
-                 encoder_path="./agents/classic/saved_models/label_encoder.joblib"):
+                 vectorizer_path="take2/agents/classic/saved_models/hashing_vectorizer.joblib",
+                 model_path="take2/agents/classic/saved_models/online_fake_news_model.joblib",
+                 encoder_path="take2/agents/classic/saved_models/label_encoder.joblib"):
 
         try:
             # Load components
