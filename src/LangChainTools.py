@@ -3,7 +3,7 @@ from langchain_core.tools import tool
 from agents.classic.classic_agent import StreamingFakeNewsAgent
 from agents.wiki_check import WikiAgent
 from agents.coherence import CoherenceAgent
-from take2.agents.scrape.main import ScraperAgent
+from src.agents.scrape.main import ScraperAgent
 
 fake_news_agent = StreamingFakeNewsAgent()
 wiki_agent = WikiAgent()

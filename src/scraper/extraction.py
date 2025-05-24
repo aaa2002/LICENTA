@@ -1,7 +1,7 @@
 import json
 import re
 import spacy
-from take2.scraper.llm import query_ollama
+from src.scraper.llm import query_ollama
 
 def extract_relations(text, tokenizer=None, model=None):
     nlp = spacy.load("en_core_web_trf")

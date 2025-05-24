@@ -1,7 +1,7 @@
-from take2.scraper.llm import claim_to_question, compare_graphs_llm
-from take2.scraper.search import get_search_results
-from take2.scraper.extraction import extract_relations
-from take2.agents.scrape.utils import load_re_model
+from src.scraper.llm import claim_to_question, compare_graphs_llm
+from src.scraper.search import get_search_results
+from src.scraper.extraction import extract_relations
+from src.agents.scrape.utils import load_re_model
 import json
 
 def main_pipeline(user_claim, logging = True):

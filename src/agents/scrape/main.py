@@ -1,4 +1,4 @@
-from take2.agents.scrape.pipeline import main_pipeline
+from src.agents.scrape.pipeline import main_pipeline
 
 class ScraperAgent:
     def __init__(self):
