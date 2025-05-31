@@ -1,19 +1,42 @@
-from langchain_core.runnables import RunnableLambda, RunnableMap
+from langchain_core.runnables import RunnableLambda
 from LangChainTools import (
     detect_fake_news,
     wiki_lookup,
     scrape_web,
-    check_coherence
+    check_coherence, delta_search
 )
 from aggregator import Aggregator
 
-# Run all tools in parallel (same input to each)
-parallel_tools = RunnableMap({
-    "fn_result": detect_fake_news,
-    "wiki_result": wiki_lookup,
-    "scraper_result": scrape_web,
-    "coherence_result": check_coherence
-})
-
-# Aggregate all results
-pipeline = parallel_tools | RunnableLambda(Aggregator().invoke)
+pipeline = (
+    RunnableLambda(lambda x: {"data": {"input": x["text"]}})
+    | RunnableLambda(lambda d: delta_search.invoke(d))
+    | RunnableLambda(lambda d: {
+        **d,
+        "fn_result": detect_fake_news.invoke({"data": {
+            "input": d["input"],
+            "web_text": d.get("web_text", "")
+        }})
+    })
+    | RunnableLambda(lambda d: {
+        **d,
+        "wiki_result": wiki_lookup.invoke({"data": {
+            "input": d["input"],
+            "web_text": d.get("web_text", "")
+        }})
+    })
+    | RunnableLambda(lambda d: {
+        **d,
+        "scraper_result": scrape_web.invoke({"data": {
+            "input": d["input"],
+            "web_text": d.get("web_text", "")
+        }})
+    })
+    | RunnableLambda(lambda d: {
+        **d,
+        "coherence_result": check_coherence.invoke({"data": {
+            "input": d["input"],
+            "web_text": d.get("web_text", "")
+        }})
+    })
+    | RunnableLambda(Aggregator().invoke)
+)

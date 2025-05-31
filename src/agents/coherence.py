@@ -17,7 +17,7 @@ class CoherenceAgent:
     def __init__(self, model="llama3"):
         self.model = model
 
-    def analyze(self, paragraph: str):
+    def analyze(self, paragraph: str, web_text: str = None):
         prompt = f"{SYSTEM_PROMPT}\n\nParagraph:\n\"\"\"\n{paragraph}\n\"\"\"\n"
         try:
             response = requests.post(

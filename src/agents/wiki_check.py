@@ -46,7 +46,7 @@ class WikiAgent:
         cleaned = {term.title() for term in candidates if term.isascii()}
         return list(cleaned)
 
-    def analyze(self, text):
+    def analyze(self, text, web_text=None):
         search_terms = self.extract_search_terms(text)
         print("Wikipedia search terms:", search_terms)
 

@@ -4,7 +4,7 @@ class ScraperAgent:
     def __init__(self):
         pass
 
-    def analyze(self, claim):
+    def analyze(self, claim, web_text=None):
         print(f"[LOG] Analyzing claim: {claim}")
-        result = main_pipeline(claim, False)
+        result = main_pipeline(claim, web_text=web_text, logging=False)
         return result

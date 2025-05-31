@@ -1,8 +1,13 @@
+import json
+
 import joblib
 import numpy as np
+from delta import DeltaTable
 from sklearn.feature_extraction.text import HashingVectorizer
 from src.scraper.search import get_search_results
 from src.scraper.llm import claim_to_question
+from pyspark.sql import SparkSession
+from src.agents.get_web.get_web import get_top_k_results_delta  # Your new unified logic
 
 class StreamingFakeNewsAgent:
     def __init__(self,
@@ -11,12 +16,10 @@ class StreamingFakeNewsAgent:
                  encoder_path="src/agents/classic/saved_models/label_encoder.joblib"):
 
         try:
-            # Load components
             self.vectorizer = joblib.load(vectorizer_path)
             self.model = joblib.load(model_path)
             self.label_encoder = joblib.load(encoder_path)
 
-            # Verify components
             if not isinstance(self.vectorizer, HashingVectorizer):
                 raise ValueError("Vectorizer must be HashingVectorizer for streaming")
             if not hasattr(self.model, 'partial_fit'):
@@ -25,8 +28,14 @@ class StreamingFakeNewsAgent:
         except Exception as e:
             raise RuntimeError(f"Initialization failed: {str(e)}")
 
-    def analyze(self, text):
+    def analyze(self, text, web_text=None):
         """Analyze text with streaming-compatible prediction"""
+
+        if web_text:
+            success = self.update(web_text, 'real')
+            if not success:
+                print(f"[Warning] Failed to update with web text: {web_text[:100]}...")
+
         try:
             X = self.vectorizer.transform([text])
             proba = self.model.predict_proba(X)[0]
@@ -102,20 +111,18 @@ class StreamingFakeNewsAgent:
     def analyze_with_scraper_update(self, text):
         try:
             question = claim_to_question(text)
-            print(f"Generated Question: {question}")
+            print(f"[LOG] Generated Question: {question}")
 
-            search_results = get_search_results(question, 10)
-            print(f"Search Results Count: {len(search_results)}")
-            if not search_results:
-                print(f"[Warning] No search results for: {question}")
+            search_results, web_text = get_top_k_results_delta(question, k=5)
 
             for result in search_results:
                 success = self.update(result, 'real')
                 if not success:
-                    print(f"[Warning] Failed to update with result: {result[:100]}...")
+                    print(f"[Warning] Failed to update with result: {str(result)[:100]}...")
 
             result = self.analyze(text)
             return result
+
         except Exception as e:
             return {
                 'error': str(e),

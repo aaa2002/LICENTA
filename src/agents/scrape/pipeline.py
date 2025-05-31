@@ -1,23 +1,13 @@
 from src.scraper.llm import claim_to_question, compare_graphs_llm
-from src.scraper.search import get_search_results
 from src.scraper.extraction import extract_relations
 from src.agents.scrape.utils import load_re_model
+from src.agents.get_web.get_web import get_top_k_results_delta
 import json
 
-def main_pipeline(user_claim, logging = True):
+def main_pipeline(user_claim, web_text=None, logging=True):
     print(f"[LOG] Claim: {user_claim}")
 
-    # Step 1: Reformulate claim to a W-question
-    question = claim_to_question(user_claim)
-    print(f"[LOG] Reformulated question: {question}")
-
-    # Step 2: Search the web
-    web_results = get_search_results(question)
-    web_text = " ".join(web_results)
-    for i, res in enumerate(web_results):
-        print(f"[LOG] Web Result {i+1}: {res[:150]}...")
-
-    # Step 3: Extract relations
+    # Extract relations
     tokenizer, model = load_re_model()
     print("[LOG] Extracting triplets...")
     user_rels = extract_relations(user_claim, tokenizer, model)
@@ -26,7 +16,7 @@ def main_pipeline(user_claim, logging = True):
     print(f"[LOG] Claim Relations: {user_rels}")
     print(f"[LOG] Web Relations: {web_rels[:5]}...")
 
-    # Step 4: Verdict from LLM
+    # Verdict from LLM
     verdict = compare_graphs_llm(user_claim, user_rels, web_rels)
     if logging:
         print("\n[LOG] Verdict:")
