@@ -5,6 +5,8 @@ from LangChain_Workflow import pipeline
 import uvicorn
 from src.agents.entityExtractor.extractor import Extractor
 from src.agents.queryGen.qGen import QueryGenerator
+from src.scraper.search import get_search_results_complete
+from src.recommendation_system.embedded_cosine import get_top_5_similar_articles
 
 extractor = Extractor()
 query_generator = QueryGenerator()
@@ -23,6 +25,8 @@ app.add_middleware(
 class InputData(BaseModel):
     text: str
 
+class RecommendationsInputData(BaseModel):
+    inputText: str
 
 @app.post("/predict")
 async def predict(data: InputData):
@@ -45,6 +49,16 @@ async def generate_query(data: InputData):
     print(f"Transformed Query: {transformed_query}")
 
     return transformed_query
+
+@app.post("/get-recommendations")
+async def get_recommendations(data: RecommendationsInputData):
+    input_text = "fake real " + data.inputText
+
+    search_results = get_search_results_complete(input_text, 30)
+
+    top_5 = get_top_5_similar_articles(input_text, search_results)
+
+    return {"results": top_5, "all": search_results}
 
 
 if __name__ == "__main__":

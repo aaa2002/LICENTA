@@ -65,11 +65,23 @@
           </v-card-text>
         </v-card>
       </v-col>
-      <!-- <v-col cols="12" md="6">
+      <v-col cols="12" md="6">
         <v-card>
-          <v-card-title>Detector Card 4</v-card-title>
+          <v-card-title>Article Recommendations</v-card-title>
+          <v-card-subtitle>For further reading, on the topic: {{ userInput }}</v-card-subtitle>
           <v-card-text>
-            This is the content of the fourth detector card.
+            <v-list>
+              <v-list-item
+                v-for="(item, index) in recommendations"
+                class="mb-2"
+                :key="index"
+              >
+                <v-list-item-content>
+                  <v-list-item-title><a :href="item.href" target="_blank">{{ item.title }}</a></v-list-item-title>
+                  <v-list-item-subtitle>{{ item.body }}</v-list-item-subtitle>
+                </v-list-item-content>
+              </v-list-item>
+            </v-list>
           </v-card-text>
         </v-card>
       </v-col>
@@ -80,7 +92,7 @@
             This is the content of the fifth detector card.
           </v-card-text>
         </v-card>
-      </v-col> -->
+      </v-col>
     </v-row>
 
     <!-- <v-row>
@@ -135,6 +147,7 @@ const apiResponse = ref({
 });
 const userInput = ref("");
 const isLoading = ref(false);
+const recommendations = ref([]);
 
 const getResult = () => {
   isLoading.value = true;
@@ -151,6 +164,14 @@ const getResult = () => {
       apiResponse.value = "Error: " + error.message;
       isLoading.value = false;
     });
+
+  axios.post("http://localhost:8000/get-recommendations", {
+    inputText: userInput.value
+  }).then((response) => {
+    recommendations.value = response.data.results;
+  }).catch((error) => {
+    console.error("There was an error fetching recommendations!", error);
+  });
 };
 </script>
 
