@@ -13,7 +13,7 @@ def extract_relations(text, tokenizer=None, model=None):
         "You are an intelligent assistant that extracts factual relations in the form of triplets. "
         "If you receive no entities, use the text to extract triplets directly.\n\n"
         "(subject, relation, object) based on a given text and its named entities.\n\n"
-        "Respond ONLY with a list of triplets in JSON format like this:\n"
+        "Respond ONLY with a list of triplets in JSON format like these examples:\n"
         "[\n"
         "  [\"Barack Obama\", \"bornIn\", \"Hawaii\"],\n"
         "  [\"Trump\", \"presidentOf\", \"United States\"]\n"

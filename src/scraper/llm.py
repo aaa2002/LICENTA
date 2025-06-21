@@ -48,6 +48,7 @@ def compare_graphs_llm(user_claim, user_triplets, web_triplets, model="llama3"):
         f"User Claim: {user_claim}\n"
         f"Claim Triplets: {user_triplets}\n"
         f"Web Triplets: {web_triplets}\n"
+        "Even if there is an error, do not change the output format, but populate it accordingly.\n"
         "Respond now:"
     )
     result = query_ollama(prompt, model=model)

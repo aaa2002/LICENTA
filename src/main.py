@@ -31,13 +31,11 @@ class RecommendationsInputData(BaseModel):
 
 @app.post("/predict")
 async def predict(data: InputData):
-    # try:
-    result = pipeline.invoke({"text": data.text})
-    return result
-
-
-# except Exception as e:
-#     return {"error": str(e)}
+    try:
+        result = pipeline.invoke({"text": data.text})
+        return result
+    except Exception as e:
+        return {"error": str(e)}
 
 @app.post("/generate-query")
 async def generate_query(data: InputData):

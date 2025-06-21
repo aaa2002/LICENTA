@@ -4,16 +4,24 @@
 
     <v-row>
       <div v-if="isLoading" class="loading-indicator mt-4">
-        <v-skeleton-loader type="article" :elevation="1" loading></v-skeleton-loader>
+        <v-skeleton-loader
+          type="article"
+          :elevation="1"
+          loading
+        ></v-skeleton-loader>
       </div>
       <v-card class="main-response-card" v-else>
         <v-card-title>Detector Result</v-card-title>
         <v-card-text>
           <div v-if="apiResponse">
             <div class="d-flex">
-              <div class="icon-wrapper mr-2" :class="
-              apiResponse.final_label === 'real' ? 'icon-wrapper--success' : 'icon-wrapper--error'"
-              "
+              <div
+                class="icon-wrapper mr-2"
+                :class="
+                  apiResponse.final_label === 'real'
+                    ? 'icon-wrapper--success'
+                    : 'icon-wrapper--error'
+                "
               >
                 <v-icon
                   :color="
@@ -137,6 +145,7 @@ const getResult = () => {
       text: userInput.value,
     })
     .then((response) => {
+      console.log("Response from API:", response.data);
       apiResponse.value = response.data;
       isLoading.value = false;
     })
@@ -225,7 +234,6 @@ const responseExample = ref({
   width: 44px;
   height: 44px;
   border-radius: 8px;
-
 }
 
 .icon-wrapper--success {
@@ -239,6 +247,5 @@ const responseExample = ref({
 .loading-indicator {
   width: 100% !important;
   height: 100% !important;
-
 }
 </style>
