@@ -34,7 +34,7 @@ class StreamingFakeNewsAgent:
         if web_text:
             success = self.update(web_text, 'real')
             if not success:
-                print(f"[Warning] Failed to update with web text: {web_text[:100]}...")
+                print(f"[LOG] --- [classic_agent.py] - Failed to update with web text: {web_text[:100]}...")
 
         try:
             X = self.vectorizer.transform([text])
@@ -77,15 +77,15 @@ class StreamingFakeNewsAgent:
             self.model.partial_fit(X, y, classes=class_labels)
 
             # Save updated model
-            joblib.dump(self.model, "./agents/classic/saved_models/online_fake_news_model.joblib")
+            joblib.dump(self.model, "src/agents/classic/saved_models/online_fake_news_model.joblib")
 
             return True
 
         except Exception as e:
-            print(f"Update error: {str(e)}")
-            print(f"True label (raw): {true_label}")
-            print(f"Transformed y: {y}")
-            print(f"Classes used: {class_labels}")
+            print(f"[LOG] --- [classic_agent.py] - Update error: {str(e)}")
+            print(f"[LOG] --- [classic_agent.py] - True label (raw): {true_label}")
+            print(f"[LOG] --- [classic_agent.py] - Transformed y: {y}")
+            print(f"[LOG] --- [classic_agent.py] - Classes used: {class_labels}")
             return False
 
     def batch_update(self, texts, labels):
@@ -105,20 +105,20 @@ class StreamingFakeNewsAgent:
 
             return True
         except Exception as e:
-            print(f"Batch update error: {str(e)}")
+            print(f"[LOG] --- [classic_agent.py] - Batch update error: {str(e)}")
             return False
 
     def analyze_with_scraper_update(self, text):
         try:
             question = claim_to_question(text)
-            print(f"[LOG] Generated Question: {question}")
+            print(f"[LOG] --- [classic_agent.py] - Generated Question: {question}")
 
             search_results, web_text = get_top_k_results_delta(question, k=5)
 
             for result in search_results:
                 success = self.update(result, 'real')
                 if not success:
-                    print(f"[Warning] Failed to update with result: {str(result)[:100]}...")
+                    print(f"[LOG] --- [classic_agent.py] - Failed to update with result: {str(result)[:100]}...")
 
             result = self.analyze(text)
             return result

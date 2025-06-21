@@ -35,27 +35,32 @@ def get_top_k_results_delta(question, k=5):
 
     prompt += (
         f"This is a new question:\n{question}\n\n"
-        "Does this question convey the same meaning as any of the others?\n"
-        "If so, return {\"id\": <ID of the matching question>}.\n"
-        "Else, return {\"id\": \"None\"}.\n"
+        "Does this question talk about the same topic as any of the others?\n"
+        "There might be no matching options, highly probable even.\n"
+        "Negative answers are also valid and important.\n"
+        "If a question matches correctly, return {\"id\": <ID of the matching question>}.\n"
+        "Else, or if it is unsure, return {\"id\": \"None\"}.\n"
         "Respond ONLY with the JSON object.\n"
     )
 
-    print(f"[LOG] LLM Prompt: {prompt[:500]}...")
-    print(f"prompt: {prompt}")
+    print(f"[LOG] --- [get_web.py] - Prompt: \n\n{prompt}\n\n")
     matched_id = json.loads(query_ollama(prompt))['id']
 
     # Step 4: If match found, return existing result
     if matched_id and matched_id != "None":
-        print(f"[Info] Matched existing question with ID: {matched_id}")
+        print(f"[LOG] --- [get_web.py] - Matched existing question with ID: {matched_id}")
         match = next((r for r in existing_records if str(r["id"]) == str(matched_id)), None)
         if match:
             return [match["web_results_json"]], match["web_results_json"]
-    print(spark.version)
+    print("[LOG] --- [get_web.py] - " + spark.version)
 
     # Step 5: Perform fresh search and store it
-    web_results = get_search_results(question["text"], k)
-    web_text = " ".join(web_results)
+    try:
+        web_results = get_search_results(question, k)
+        web_text = " ".join(web_results)
+    except Exception as e:
+        print(f"[LOG] --- [get_web.py] - Search failed: {e}")
+        return [], ""
 
     new_id = str(uuid.uuid4())
     df = spark.createDataFrame([{
@@ -66,6 +71,6 @@ def get_top_k_results_delta(question, k=5):
     df.write.format("delta").mode("append").save(delta_path)
 
     for i, res in enumerate(web_results):
-        print(f"[LOG] Web Result {i + 1}: {res[:150]}...")
+        print(f"[LOG] --- [get_web.py] - Web Result {i + 1}: {res[:150]}...")
 
     return web_results, web_text
