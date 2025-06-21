@@ -1,0 +1,4002 @@
+[
+  {
+    "input": "deep learning, AI",
+    "target": "\"deep learning\" AND \"AI\""
+  },
+  {
+    "input": "OpenAI, Tesla, Google",
+    "target": "\"OpenAI\" AND \"Tesla\" AND \"Google\""
+  },
+  {
+    "input": "Andrew Ng, Elon Musk, Yann LeCun",
+    "target": "\"Andrew Ng\" AND \"Elon Musk\" AND \"Yann LeCun\""
+  },
+  {
+    "input": "Meta, Google, OpenAI",
+    "target": "\"Meta\" AND \"Google\" AND \"OpenAI\""
+  },
+  {
+    "input": "blockchain",
+    "target": "\"blockchain\""
+  },
+  {
+    "input": "AI, NLP",
+    "target": "\"AI\" AND \"NLP\""
+  },
+  {
+    "input": "Andrew Ng",
+    "target": "\"Andrew Ng\""
+  },
+  {
+    "input": "Meta",
+    "target": "\"Meta\""
+  },
+  {
+    "input": "Elon Musk, Yann LeCun, Andrew Ng",
+    "target": "\"Elon Musk\" AND \"Yann LeCun\" AND \"Andrew Ng\""
+  },
+  {
+    "input": "Google, Tesla",
+    "target": "\"Google\" AND \"Tesla\""
+  },
+  {
+    "input": "deep learning, AI",
+    "target": "\"deep learning\" AND \"AI\""
+  },
+  {
+    "input": "Yann LeCun, Elon Musk",
+    "target": "\"Yann LeCun\" AND \"Elon Musk\""
+  },
+  {
+    "input": "Elon Musk",
+    "target": "\"Elon Musk\""
+  },
+  {
+    "input": "deep learning, machine learning, blockchain",
+    "target": "\"deep learning\" AND \"machine learning\" AND \"blockchain\""
+  },
+  {
+    "input": "Elon Musk",
+    "target": "\"Elon Musk\""
+  },
+  {
+    "input": "Meta",
+    "target": "\"Meta\""
+  },
+  {
+    "input": "machine learning, AI",
+    "target": "\"machine learning\" AND \"AI\""
+  },
+  {
+    "input": "Andrew Ng, Yann LeCun",
+    "target": "\"Andrew Ng\" AND \"Yann LeCun\""
+  },
+  {
+    "input": "Meta, OpenAI, Tesla",
+    "target": "\"Meta\" AND \"OpenAI\" AND \"Tesla\""
+  },
+  {
+    "input": "Andrew Ng, Yann LeCun",
+    "target": "\"Andrew Ng\" AND \"Yann LeCun\""
+  },
+  {
+    "input": "Elon Musk, Yann LeCun, Andrew Ng",
+    "target": "\"Elon Musk\" AND \"Yann LeCun\" AND \"Andrew Ng\""
+  },
+  {
+    "input": "Google",
+    "target": "\"Google\""
+  },
+  {
+    "input": "Meta, Tesla",
+    "target": "\"Meta\" AND \"Tesla\""
+  },
+  {
+    "input": "Yann LeCun",
+    "target": "\"Yann LeCun\""
+  },
+  {
+    "input": "blockchain, machine learning",
+    "target": "\"blockchain\" AND \"machine learning\""
+  },
+  {
+    "input": "Yann LeCun, Andrew Ng",
+    "target": "\"Yann LeCun\" AND \"Andrew Ng\""
+  },
+  {
+    "input": "Elon Musk",
+    "target": "\"Elon Musk\""
+  },
+  {
+    "input": "OpenAI",
+    "target": "\"OpenAI\""
+  },
+  {
+    "input": "Meta, OpenAI",
+    "target": "\"Meta\" AND \"OpenAI\""
+  },
+  {
+    "input": "deep learning, blockchain",
+    "target": "\"deep learning\" AND \"blockchain\""
+  },
+  {
+    "input": "Meta",
+    "target": "\"Meta\""
+  },
+  {
+    "input": "AI",
+    "target": "\"AI\""
+  },
+  {
+    "input": "AI",
+    "target": "\"AI\""
+  },
+  {
+    "input": "OpenAI, Tesla",
+    "target": "\"OpenAI\" AND \"Tesla\""
+  },
+  {
+    "input": "Tesla, OpenAI",
+    "target": "\"Tesla\" AND \"OpenAI\""
+  },
+  {
+    "input": "Elon Musk, Yann LeCun, Andrew Ng",
+    "target": "\"Elon Musk\" AND \"Yann LeCun\" AND \"Andrew Ng\""
+  },
+  {
+    "input": "Yann LeCun",
+    "target": "\"Yann LeCun\""
+  },
+  {
+    "input": "Meta, Google",
+    "target": "\"Meta\" AND \"Google\""
+  },
+  {
+    "input": "Elon Musk, Yann LeCun, Andrew Ng",
+    "target": "\"Elon Musk\" AND \"Yann LeCun\" AND \"Andrew Ng\""
+  },
+  {
+    "input": "NLP, blockchain, deep learning",
+    "target": "\"NLP\" AND \"blockchain\" AND \"deep learning\""
+  },
+  {
+    "input": "blockchain, AI, NLP",
+    "target": "\"blockchain\" AND \"AI\" AND \"NLP\""
+  },
+  {
+    "input": "Elon Musk, Yann LeCun",
+    "target": "\"Elon Musk\" AND \"Yann LeCun\""
+  },
+  {
+    "input": "Andrew Ng, Yann LeCun, Elon Musk",
+    "target": "\"Andrew Ng\" AND \"Yann LeCun\" AND \"Elon Musk\""
+  },
+  {
+    "input": "Andrew Ng",
+    "target": "\"Andrew Ng\""
+  },
+  {
+    "input": "Google",
+    "target": "\"Google\""
+  },
+  {
+    "input": "Elon Musk, Andrew Ng, Yann LeCun",
+    "target": "\"Elon Musk\" AND \"Andrew Ng\" AND \"Yann LeCun\""
+  },
+  {
+    "input": "Andrew Ng, Elon Musk",
+    "target": "\"Andrew Ng\" AND \"Elon Musk\""
+  },
+  {
+    "input": "OpenAI, Google, Meta",
+    "target": "\"OpenAI\" AND \"Google\" AND \"Meta\""
+  },
+  {
+    "input": "Yann LeCun, Elon Musk",
+    "target": "\"Yann LeCun\" AND \"Elon Musk\""
+  },
+  {
+    "input": "Andrew Ng",
+    "target": "\"Andrew Ng\""
+  },
+  {
+    "input": "NLP, blockchain",
+    "target": "\"NLP\" AND \"blockchain\""
+  },
+  {
+    "input": "deep learning, machine learning",
+    "target": "\"deep learning\" AND \"machine learning\""
+  },
+  {
+    "input": "Tesla",
+    "target": "\"Tesla\""
+  },
+  {
+    "input": "Andrew Ng, Yann LeCun, Elon Musk",
+    "target": "\"Andrew Ng\" AND \"Yann LeCun\" AND \"Elon Musk\""
+  },
+  {
+    "input": "OpenAI, Meta, Tesla",
+    "target": "\"OpenAI\" AND \"Meta\" AND \"Tesla\""
+  },
+  {
+    "input": "blockchain, NLP, AI",
+    "target": "\"blockchain\" AND \"NLP\" AND \"AI\""
+  },
+  {
+    "input": "deep learning, blockchain, NLP",
+    "target": "\"deep learning\" AND \"blockchain\" AND \"NLP\""
+  },
+  {
+    "input": "blockchain, AI",
+    "target": "\"blockchain\" AND \"AI\""
+  },
+  {
+    "input": "AI, deep learning, blockchain",
+    "target": "\"AI\" AND \"deep learning\" AND \"blockchain\""
+  },
+  {
+    "input": "Tesla, Meta, Google",
+    "target": "\"Tesla\" AND \"Meta\" AND \"Google\""
+  },
+  {
+    "input": "Google, OpenAI",
+    "target": "\"Google\" AND \"OpenAI\""
+  },
+  {
+    "input": "OpenAI, Meta",
+    "target": "\"OpenAI\" AND \"Meta\""
+  },
+  {
+    "input": "NLP, deep learning",
+    "target": "\"NLP\" AND \"deep learning\""
+  },
+  {
+    "input": "OpenAI, Google",
+    "target": "\"OpenAI\" AND \"Google\""
+  },
+  {
+    "input": "machine learning, NLP, blockchain",
+    "target": "\"machine learning\" AND \"NLP\" AND \"blockchain\""
+  },
+  {
+    "input": "Andrew Ng",
+    "target": "\"Andrew Ng\""
+  },
+  {
+    "input": "Tesla, OpenAI, Google",
+    "target": "\"Tesla\" AND \"OpenAI\" AND \"Google\""
+  },
+  {
+    "input": "deep learning",
+    "target": "\"deep learning\""
+  },
+  {
+    "input": "OpenAI",
+    "target": "\"OpenAI\""
+  },
+  {
+    "input": "Elon Musk, Yann LeCun",
+    "target": "\"Elon Musk\" AND \"Yann LeCun\""
+  },
+  {
+    "input": "blockchain",
+    "target": "\"blockchain\""
+  },
+  {
+    "input": "Meta, Google, OpenAI",
+    "target": "\"Meta\" AND \"Google\" AND \"OpenAI\""
+  },
+  {
+    "input": "Meta",
+    "target": "\"Meta\""
+  },
+  {
+    "input": "NLP",
+    "target": "\"NLP\""
+  },
+  {
+    "input": "Yann LeCun",
+    "target": "\"Yann LeCun\""
+  },
+  {
+    "input": "NLP, machine learning, blockchain",
+    "target": "\"NLP\" AND \"machine learning\" AND \"blockchain\""
+  },
+  {
+    "input": "Google, OpenAI",
+    "target": "\"Google\" AND \"OpenAI\""
+  },
+  {
+    "input": "Yann LeCun, Elon Musk",
+    "target": "\"Yann LeCun\" AND \"Elon Musk\""
+  },
+  {
+    "input": "Elon Musk, Yann LeCun",
+    "target": "\"Elon Musk\" AND \"Yann LeCun\""
+  },
+  {
+    "input": "blockchain, deep learning, NLP",
+    "target": "\"blockchain\" AND \"deep learning\" AND \"NLP\""
+  },
+  {
+    "input": "Google",
+    "target": "\"Google\""
+  },
+  {
+    "input": "deep learning, NLP",
+    "target": "\"deep learning\" AND \"NLP\""
+  },
+  {
+    "input": "Andrew Ng, Elon Musk, Yann LeCun",
+    "target": "\"Andrew Ng\" AND \"Elon Musk\" AND \"Yann LeCun\""
+  },
+  {
+    "input": "Google",
+    "target": "\"Google\""
+  },
+  {
+    "input": "Yann LeCun, Andrew Ng, Elon Musk",
+    "target": "\"Yann LeCun\" AND \"Andrew Ng\" AND \"Elon Musk\""
+  },
+  {
+    "input": "AI, deep learning, NLP",
+    "target": "\"AI\" AND \"deep learning\" AND \"NLP\""
+  },
+  {
+    "input": "machine learning, NLP, blockchain",
+    "target": "\"machine learning\" AND \"NLP\" AND \"blockchain\""
+  },
+  {
+    "input": "NLP, AI",
+    "target": "\"NLP\" AND \"AI\""
+  },
+  {
+    "input": "Yann LeCun, Elon Musk",
+    "target": "\"Yann LeCun\" AND \"Elon Musk\""
+  },
+  {
+    "input": "Yann LeCun, Andrew Ng",
+    "target": "\"Yann LeCun\" AND \"Andrew Ng\""
+  },
+  {
+    "input": "Andrew Ng, Yann LeCun",
+    "target": "\"Andrew Ng\" AND \"Yann LeCun\""
+  },
+  {
+    "input": "Yann LeCun",
+    "target": "\"Yann LeCun\""
+  },
+  {
+    "input": "Tesla, Google, OpenAI",
+    "target": "\"Tesla\" AND \"Google\" AND \"OpenAI\""
+  },
+  {
+    "input": "deep learning",
+    "target": "\"deep learning\""
+  },
+  {
+    "input": "NLP",
+    "target": "\"NLP\""
+  },
+  {
+    "input": "Meta",
+    "target": "\"Meta\""
+  },
+  {
+    "input": "Google, Tesla, Meta",
+    "target": "\"Google\" AND \"Tesla\" AND \"Meta\""
+  },
+  {
+    "input": "OpenAI",
+    "target": "\"OpenAI\""
+  },
+  {
+    "input": "machine learning",
+    "target": "\"machine learning\""
+  },
+  {
+    "input": "AI, deep learning, blockchain",
+    "target": "\"AI\" AND \"deep learning\" AND \"blockchain\""
+  },
+  {
+    "input": "Andrew Ng",
+    "target": "\"Andrew Ng\""
+  },
+  {
+    "input": "Andrew Ng",
+    "target": "\"Andrew Ng\""
+  },
+  {
+    "input": "OpenAI, Meta, Tesla",
+    "target": "\"OpenAI\" AND \"Meta\" AND \"Tesla\""
+  },
+  {
+    "input": "blockchain",
+    "target": "\"blockchain\""
+  },
+  {
+    "input": "machine learning",
+    "target": "\"machine learning\""
+  },
+  {
+    "input": "Tesla, Meta, OpenAI",
+    "target": "\"Tesla\" AND \"Meta\" AND \"OpenAI\""
+  },
+  {
+    "input": "Google, OpenAI",
+    "target": "\"Google\" AND \"OpenAI\""
+  },
+  {
+    "input": "Andrew Ng, Elon Musk",
+    "target": "\"Andrew Ng\" AND \"Elon Musk\""
+  },
+  {
+    "input": "Elon Musk, Andrew Ng",
+    "target": "\"Elon Musk\" AND \"Andrew Ng\""
+  },
+  {
+    "input": "Meta, OpenAI, Tesla",
+    "target": "\"Meta\" AND \"OpenAI\" AND \"Tesla\""
+  },
+  {
+    "input": "blockchain",
+    "target": "\"blockchain\""
+  },
+  {
+    "input": "Tesla, OpenAI",
+    "target": "\"Tesla\" AND \"OpenAI\""
+  },
+  {
+    "input": "Meta",
+    "target": "\"Meta\""
+  },
+  {
+    "input": "Meta, Tesla",
+    "target": "\"Meta\" AND \"Tesla\""
+  },
+  {
+    "input": "deep learning, AI",
+    "target": "\"deep learning\" AND \"AI\""
+  },
+  {
+    "input": "blockchain, deep learning",
+    "target": "\"blockchain\" AND \"deep learning\""
+  },
+  {
+    "input": "Google, Meta",
+    "target": "\"Google\" AND \"Meta\""
+  },
+  {
+    "input": "deep learning",
+    "target": "\"deep learning\""
+  },
+  {
+    "input": "NLP, blockchain, machine learning",
+    "target": "\"NLP\" AND \"blockchain\" AND \"machine learning\""
+  },
+  {
+    "input": "deep learning, blockchain, NLP",
+    "target": "\"deep learning\" AND \"blockchain\" AND \"NLP\""
+  },
+  {
+    "input": "OpenAI",
+    "target": "\"OpenAI\""
+  },
+  {
+    "input": "Google, Meta",
+    "target": "\"Google\" AND \"Meta\""
+  },
+  {
+    "input": "deep learning, blockchain, NLP",
+    "target": "\"deep learning\" AND \"blockchain\" AND \"NLP\""
+  },
+  {
+    "input": "NLP",
+    "target": "\"NLP\""
+  },
+  {
+    "input": "Yann LeCun",
+    "target": "\"Yann LeCun\""
+  },
+  {
+    "input": "machine learning",
+    "target": "\"machine learning\""
+  },
+  {
+    "input": "AI",
+    "target": "\"AI\""
+  },
+  {
+    "input": "Yann LeCun, Elon Musk",
+    "target": "\"Yann LeCun\" AND \"Elon Musk\""
+  },
+  {
+    "input": "machine learning, blockchain",
+    "target": "\"machine learning\" AND \"blockchain\""
+  },
+  {
+    "input": "AI, deep learning",
+    "target": "\"AI\" AND \"deep learning\""
+  },
+  {
+    "input": "OpenAI, Meta, Tesla",
+    "target": "\"OpenAI\" AND \"Meta\" AND \"Tesla\""
+  },
+  {
+    "input": "deep learning, machine learning, AI",
+    "target": "\"deep learning\" AND \"machine learning\" AND \"AI\""
+  },
+  {
+    "input": "blockchain, AI, machine learning",
+    "target": "\"blockchain\" AND \"AI\" AND \"machine learning\""
+  },
+  {
+    "input": "AI, blockchain, machine learning",
+    "target": "\"AI\" AND \"blockchain\" AND \"machine learning\""
+  },
+  {
+    "input": "Elon Musk, Andrew Ng",
+    "target": "\"Elon Musk\" AND \"Andrew Ng\""
+  },
+  {
+    "input": "AI, blockchain",
+    "target": "\"AI\" AND \"blockchain\""
+  },
+  {
+    "input": "Meta, Tesla, OpenAI",
+    "target": "\"Meta\" AND \"Tesla\" AND \"OpenAI\""
+  },
+  {
+    "input": "Google",
+    "target": "\"Google\""
+  },
+  {
+    "input": "machine learning",
+    "target": "\"machine learning\""
+  },
+  {
+    "input": "Meta, Google",
+    "target": "\"Meta\" AND \"Google\""
+  },
+  {
+    "input": "blockchain",
+    "target": "\"blockchain\""
+  },
+  {
+    "input": "machine learning, AI, NLP",
+    "target": "\"machine learning\" AND \"AI\" AND \"NLP\""
+  },
+  {
+    "input": "Elon Musk, Andrew Ng, Yann LeCun",
+    "target": "\"Elon Musk\" AND \"Andrew Ng\" AND \"Yann LeCun\""
+  },
+  {
+    "input": "machine learning, blockchain",
+    "target": "\"machine learning\" AND \"blockchain\""
+  },
+  {
+    "input": "Andrew Ng, Yann LeCun, Elon Musk",
+    "target": "\"Andrew Ng\" AND \"Yann LeCun\" AND \"Elon Musk\""
+  },
+  {
+    "input": "Andrew Ng, Elon Musk",
+    "target": "\"Andrew Ng\" AND \"Elon Musk\""
+  },
+  {
+    "input": "OpenAI",
+    "target": "\"OpenAI\""
+  },
+  {
+    "input": "Andrew Ng, Yann LeCun",
+    "target": "\"Andrew Ng\" AND \"Yann LeCun\""
+  },
+  {
+    "input": "Andrew Ng, Yann LeCun",
+    "target": "\"Andrew Ng\" AND \"Yann LeCun\""
+  },
+  {
+    "input": "Google, OpenAI, Tesla",
+    "target": "\"Google\" AND \"OpenAI\" AND \"Tesla\""
+  },
+  {
+    "input": "blockchain, NLP",
+    "target": "\"blockchain\" AND \"NLP\""
+  },
+  {
+    "input": "machine learning",
+    "target": "\"machine learning\""
+  },
+  {
+    "input": "blockchain, NLP, AI",
+    "target": "\"blockchain\" AND \"NLP\" AND \"AI\""
+  },
+  {
+    "input": "Tesla, Meta",
+    "target": "\"Tesla\" AND \"Meta\""
+  },
+  {
+    "input": "Yann LeCun, Elon Musk, Andrew Ng",
+    "target": "\"Yann LeCun\" AND \"Elon Musk\" AND \"Andrew Ng\""
+  },
+  {
+    "input": "AI, blockchain",
+    "target": "\"AI\" AND \"blockchain\""
+  },
+  {
+    "input": "deep learning",
+    "target": "\"deep learning\""
+  },
+  {
+    "input": "blockchain",
+    "target": "\"blockchain\""
+  },
+  {
+    "input": "Andrew Ng",
+    "target": "\"Andrew Ng\""
+  },
+  {
+    "input": "Meta",
+    "target": "\"Meta\""
+  },
+  {
+    "input": "Elon Musk, Andrew Ng",
+    "target": "\"Elon Musk\" AND \"Andrew Ng\""
+  },
+  {
+    "input": "Google, Tesla, Meta",
+    "target": "\"Google\" AND \"Tesla\" AND \"Meta\""
+  },
+  {
+    "input": "Meta, Tesla, Google",
+    "target": "\"Meta\" AND \"Tesla\" AND \"Google\""
+  },
+  {
+    "input": "NLP, deep learning, machine learning",
+    "target": "\"NLP\" AND \"deep learning\" AND \"machine learning\""
+  },
+  {
+    "input": "Meta",
+    "target": "\"Meta\""
+  },
+  {
+    "input": "Tesla",
+    "target": "\"Tesla\""
+  },
+  {
+    "input": "machine learning, NLP",
+    "target": "\"machine learning\" AND \"NLP\""
+  },
+  {
+    "input": "machine learning, blockchain, AI",
+    "target": "\"machine learning\" AND \"blockchain\" AND \"AI\""
+  },
+  {
+    "input": "deep learning, blockchain",
+    "target": "\"deep learning\" AND \"blockchain\""
+  },
+  {
+    "input": "Andrew Ng, Yann LeCun",
+    "target": "\"Andrew Ng\" AND \"Yann LeCun\""
+  },
+  {
+    "input": "Yann LeCun",
+    "target": "\"Yann LeCun\""
+  },
+  {
+    "input": "AI, NLP",
+    "target": "\"AI\" AND \"NLP\""
+  },
+  {
+    "input": "Yann LeCun, Elon Musk",
+    "target": "\"Yann LeCun\" AND \"Elon Musk\""
+  },
+  {
+    "input": "Tesla, OpenAI",
+    "target": "\"Tesla\" AND \"OpenAI\""
+  },
+  {
+    "input": "Tesla",
+    "target": "\"Tesla\""
+  },
+  {
+    "input": "Elon Musk, Yann LeCun",
+    "target": "\"Elon Musk\" AND \"Yann LeCun\""
+  },
+  {
+    "input": "Meta",
+    "target": "\"Meta\""
+  },
+  {
+    "input": "machine learning",
+    "target": "\"machine learning\""
+  },
+  {
+    "input": "Google, Meta",
+    "target": "\"Google\" AND \"Meta\""
+  },
+  {
+    "input": "Yann LeCun, Elon Musk",
+    "target": "\"Yann LeCun\" AND \"Elon Musk\""
+  },
+  {
+    "input": "deep learning, NLP",
+    "target": "\"deep learning\" AND \"NLP\""
+  },
+  {
+    "input": "AI, deep learning",
+    "target": "\"AI\" AND \"deep learning\""
+  },
+  {
+    "input": "Meta, Tesla, OpenAI",
+    "target": "\"Meta\" AND \"Tesla\" AND \"OpenAI\""
+  },
+  {
+    "input": "Yann LeCun",
+    "target": "\"Yann LeCun\""
+  },
+  {
+    "input": "deep learning",
+    "target": "\"deep learning\""
+  },
+  {
+    "input": "machine learning, NLP, AI",
+    "target": "\"machine learning\" AND \"NLP\" AND \"AI\""
+  },
+  {
+    "input": "NLP, machine learning, deep learning",
+    "target": "\"NLP\" AND \"machine learning\" AND \"deep learning\""
+  },
+  {
+    "input": "Elon Musk",
+    "target": "\"Elon Musk\""
+  },
+  {
+    "input": "Tesla",
+    "target": "\"Tesla\""
+  },
+  {
+    "input": "blockchain, machine learning, NLP",
+    "target": "\"blockchain\" AND \"machine learning\" AND \"NLP\""
+  },
+  {
+    "input": "Meta, Tesla",
+    "target": "\"Meta\" AND \"Tesla\""
+  },
+  {
+    "input": "Yann LeCun, Andrew Ng",
+    "target": "\"Yann LeCun\" AND \"Andrew Ng\""
+  },
+  {
+    "input": "blockchain",
+    "target": "\"blockchain\""
+  },
+  {
+    "input": "blockchain, AI",
+    "target": "\"blockchain\" AND \"AI\""
+  },
+  {
+    "input": "Yann LeCun, Andrew Ng, Elon Musk",
+    "target": "\"Yann LeCun\" AND \"Andrew Ng\" AND \"Elon Musk\""
+  },
+  {
+    "input": "OpenAI, Tesla",
+    "target": "\"OpenAI\" AND \"Tesla\""
+  },
+  {
+    "input": "Google, OpenAI, Tesla",
+    "target": "\"Google\" AND \"OpenAI\" AND \"Tesla\""
+  },
+  {
+    "input": "Andrew Ng",
+    "target": "\"Andrew Ng\""
+  },
+  {
+    "input": "Google",
+    "target": "\"Google\""
+  },
+  {
+    "input": "Google, Tesla",
+    "target": "\"Google\" AND \"Tesla\""
+  },
+  {
+    "input": "AI, deep learning",
+    "target": "\"AI\" AND \"deep learning\""
+  },
+  {
+    "input": "Google, Meta, Tesla",
+    "target": "\"Google\" AND \"Meta\" AND \"Tesla\""
+  },
+  {
+    "input": "Tesla, OpenAI, Google",
+    "target": "\"Tesla\" AND \"OpenAI\" AND \"Google\""
+  },
+  {
+    "input": "blockchain, NLP",
+    "target": "\"blockchain\" AND \"NLP\""
+  },
+  {
+    "input": "NLP, deep learning, AI",
+    "target": "\"NLP\" AND \"deep learning\" AND \"AI\""
+  },
+  {
+    "input": "blockchain, NLP, deep learning",
+    "target": "\"blockchain\" AND \"NLP\" AND \"deep learning\""
+  },
+  {
+    "input": "OpenAI, Google, Tesla",
+    "target": "\"OpenAI\" AND \"Google\" AND \"Tesla\""
+  },
+  {
+    "input": "Andrew Ng, Elon Musk, Yann LeCun",
+    "target": "\"Andrew Ng\" AND \"Elon Musk\" AND \"Yann LeCun\""
+  },
+  {
+    "input": "Elon Musk",
+    "target": "\"Elon Musk\""
+  },
+  {
+    "input": "blockchain, AI",
+    "target": "\"blockchain\" AND \"AI\""
+  },
+  {
+    "input": "Tesla, Meta",
+    "target": "\"Tesla\" AND \"Meta\""
+  },
+  {
+    "input": "AI, deep learning, NLP",
+    "target": "\"AI\" AND \"deep learning\" AND \"NLP\""
+  },
+  {
+    "input": "Yann LeCun",
+    "target": "\"Yann LeCun\""
+  },
+  {
+    "input": "Google",
+    "target": "\"Google\""
+  },
+  {
+    "input": "AI, blockchain",
+    "target": "\"AI\" AND \"blockchain\""
+  },
+  {
+    "input": "Elon Musk",
+    "target": "\"Elon Musk\""
+  },
+  {
+    "input": "Yann LeCun, Andrew Ng",
+    "target": "\"Yann LeCun\" AND \"Andrew Ng\""
+  },
+  {
+    "input": "Andrew Ng, Elon Musk",
+    "target": "\"Andrew Ng\" AND \"Elon Musk\""
+  },
+  {
+    "input": "machine learning, NLP",
+    "target": "\"machine learning\" AND \"NLP\""
+  },
+  {
+    "input": "OpenAI, Meta, Tesla",
+    "target": "\"OpenAI\" AND \"Meta\" AND \"Tesla\""
+  },
+  {
+    "input": "blockchain",
+    "target": "\"blockchain\""
+  },
+  {
+    "input": "OpenAI",
+    "target": "\"OpenAI\""
+  },
+  {
+    "input": "Tesla, OpenAI",
+    "target": "\"Tesla\" AND \"OpenAI\""
+  },
+  {
+    "input": "blockchain",
+    "target": "\"blockchain\""
+  },
+  {
+    "input": "NLP, machine learning, AI",
+    "target": "\"NLP\" AND \"machine learning\" AND \"AI\""
+  },
+  {
+    "input": "Google",
+    "target": "\"Google\""
+  },
+  {
+    "input": "Elon Musk, Yann LeCun",
+    "target": "\"Elon Musk\" AND \"Yann LeCun\""
+  },
+  {
+    "input": "AI",
+    "target": "\"AI\""
+  },
+  {
+    "input": "Elon Musk",
+    "target": "\"Elon Musk\""
+  },
+  {
+    "input": "Google",
+    "target": "\"Google\""
+  },
+  {
+    "input": "deep learning, NLP",
+    "target": "\"deep learning\" AND \"NLP\""
+  },
+  {
+    "input": "blockchain",
+    "target": "\"blockchain\""
+  },
+  {
+    "input": "AI",
+    "target": "\"AI\""
+  },
+  {
+    "input": "blockchain, machine learning",
+    "target": "\"blockchain\" AND \"machine learning\""
+  },
+  {
+    "input": "blockchain",
+    "target": "\"blockchain\""
+  },
+  {
+    "input": "deep learning, AI",
+    "target": "\"deep learning\" AND \"AI\""
+  },
+  {
+    "input": "Google, OpenAI",
+    "target": "\"Google\" AND \"OpenAI\""
+  },
+  {
+    "input": "machine learning",
+    "target": "\"machine learning\""
+  },
+  {
+    "input": "Meta, OpenAI",
+    "target": "\"Meta\" AND \"OpenAI\""
+  },
+  {
+    "input": "Andrew Ng",
+    "target": "\"Andrew Ng\""
+  },
+  {
+    "input": "Tesla, Google, OpenAI",
+    "target": "\"Tesla\" AND \"Google\" AND \"OpenAI\""
+  },
+  {
+    "input": "OpenAI, Meta",
+    "target": "\"OpenAI\" AND \"Meta\""
+  },
+  {
+    "input": "NLP, deep learning, blockchain",
+    "target": "\"NLP\" AND \"deep learning\" AND \"blockchain\""
+  },
+  {
+    "input": "blockchain, deep learning, NLP",
+    "target": "\"blockchain\" AND \"deep learning\" AND \"NLP\""
+  },
+  {
+    "input": "Andrew Ng",
+    "target": "\"Andrew Ng\""
+  },
+  {
+    "input": "Elon Musk, Yann LeCun",
+    "target": "\"Elon Musk\" AND \"Yann LeCun\""
+  },
+  {
+    "input": "Tesla, OpenAI",
+    "target": "\"Tesla\" AND \"OpenAI\""
+  },
+  {
+    "input": "Tesla, Google",
+    "target": "\"Tesla\" AND \"Google\""
+  },
+  {
+    "input": "Yann LeCun, Andrew Ng, Elon Musk",
+    "target": "\"Yann LeCun\" AND \"Andrew Ng\" AND \"Elon Musk\""
+  },
+  {
+    "input": "blockchain, deep learning",
+    "target": "\"blockchain\" AND \"deep learning\""
+  },
+  {
+    "input": "OpenAI, Tesla, Google",
+    "target": "\"OpenAI\" AND \"Tesla\" AND \"Google\""
+  },
+  {
+    "input": "Meta, Google",
+    "target": "\"Meta\" AND \"Google\""
+  },
+  {
+    "input": "deep learning",
+    "target": "\"deep learning\""
+  },
+  {
+    "input": "Google, Meta, Tesla",
+    "target": "\"Google\" AND \"Meta\" AND \"Tesla\""
+  },
+  {
+    "input": "Yann LeCun, Elon Musk",
+    "target": "\"Yann LeCun\" AND \"Elon Musk\""
+  },
+  {
+    "input": "machine learning, blockchain, AI",
+    "target": "\"machine learning\" AND \"blockchain\" AND \"AI\""
+  },
+  {
+    "input": "machine learning, AI, blockchain",
+    "target": "\"machine learning\" AND \"AI\" AND \"blockchain\""
+  },
+  {
+    "input": "Yann LeCun",
+    "target": "\"Yann LeCun\""
+  },
+  {
+    "input": "Elon Musk, Andrew Ng",
+    "target": "\"Elon Musk\" AND \"Andrew Ng\""
+  },
+  {
+    "input": "machine learning",
+    "target": "\"machine learning\""
+  },
+  {
+    "input": "Elon Musk, Yann LeCun",
+    "target": "\"Elon Musk\" AND \"Yann LeCun\""
+  },
+  {
+    "input": "Elon Musk, Yann LeCun, Andrew Ng",
+    "target": "\"Elon Musk\" AND \"Yann LeCun\" AND \"Andrew Ng\""
+  },
+  {
+    "input": "Tesla, OpenAI",
+    "target": "\"Tesla\" AND \"OpenAI\""
+  },
+  {
+    "input": "Elon Musk, Andrew Ng",
+    "target": "\"Elon Musk\" AND \"Andrew Ng\""
+  },
+  {
+    "input": "machine learning, blockchain",
+    "target": "\"machine learning\" AND \"blockchain\""
+  },
+  {
+    "input": "Andrew Ng, Elon Musk, Yann LeCun",
+    "target": "\"Andrew Ng\" AND \"Elon Musk\" AND \"Yann LeCun\""
+  },
+  {
+    "input": "deep learning, AI",
+    "target": "\"deep learning\" AND \"AI\""
+  },
+  {
+    "input": "Google",
+    "target": "\"Google\""
+  },
+  {
+    "input": "AI, blockchain",
+    "target": "\"AI\" AND \"blockchain\""
+  },
+  {
+    "input": "Andrew Ng",
+    "target": "\"Andrew Ng\""
+  },
+  {
+    "input": "OpenAI, Tesla, Meta",
+    "target": "\"OpenAI\" AND \"Tesla\" AND \"Meta\""
+  },
+  {
+    "input": "AI",
+    "target": "\"AI\""
+  },
+  {
+    "input": "Google, OpenAI, Meta",
+    "target": "\"Google\" AND \"OpenAI\" AND \"Meta\""
+  },
+  {
+    "input": "AI",
+    "target": "\"AI\""
+  },
+  {
+    "input": "blockchain",
+    "target": "\"blockchain\""
+  },
+  {
+    "input": "Elon Musk, Andrew Ng, Yann LeCun",
+    "target": "\"Elon Musk\" AND \"Andrew Ng\" AND \"Yann LeCun\""
+  },
+  {
+    "input": "Andrew Ng, Elon Musk, Yann LeCun",
+    "target": "\"Andrew Ng\" AND \"Elon Musk\" AND \"Yann LeCun\""
+  },
+  {
+    "input": "Meta, Google, OpenAI",
+    "target": "\"Meta\" AND \"Google\" AND \"OpenAI\""
+  },
+  {
+    "input": "Yann LeCun, Andrew Ng",
+    "target": "\"Yann LeCun\" AND \"Andrew Ng\""
+  },
+  {
+    "input": "Andrew Ng, Elon Musk, Yann LeCun",
+    "target": "\"Andrew Ng\" AND \"Elon Musk\" AND \"Yann LeCun\""
+  },
+  {
+    "input": "NLP, machine learning",
+    "target": "\"NLP\" AND \"machine learning\""
+  },
+  {
+    "input": "deep learning",
+    "target": "\"deep learning\""
+  },
+  {
+    "input": "NLP",
+    "target": "\"NLP\""
+  },
+  {
+    "input": "Elon Musk, Yann LeCun, Andrew Ng",
+    "target": "\"Elon Musk\" AND \"Yann LeCun\" AND \"Andrew Ng\""
+  },
+  {
+    "input": "Andrew Ng, Elon Musk",
+    "target": "\"Andrew Ng\" AND \"Elon Musk\""
+  },
+  {
+    "input": "AI, deep learning, blockchain",
+    "target": "\"AI\" AND \"deep learning\" AND \"blockchain\""
+  },
+  {
+    "input": "Meta, OpenAI, Google",
+    "target": "\"Meta\" AND \"OpenAI\" AND \"Google\""
+  },
+  {
+    "input": "NLP",
+    "target": "\"NLP\""
+  },
+  {
+    "input": "machine learning, blockchain",
+    "target": "\"machine learning\" AND \"blockchain\""
+  },
+  {
+    "input": "Meta",
+    "target": "\"Meta\""
+  },
+  {
+    "input": "machine learning",
+    "target": "\"machine learning\""
+  },
+  {
+    "input": "Andrew Ng, Yann LeCun",
+    "target": "\"Andrew Ng\" AND \"Yann LeCun\""
+  },
+  {
+    "input": "blockchain",
+    "target": "\"blockchain\""
+  },
+  {
+    "input": "Elon Musk, Andrew Ng",
+    "target": "\"Elon Musk\" AND \"Andrew Ng\""
+  },
+  {
+    "input": "Elon Musk, Yann LeCun",
+    "target": "\"Elon Musk\" AND \"Yann LeCun\""
+  },
+  {
+    "input": "blockchain",
+    "target": "\"blockchain\""
+  },
+  {
+    "input": "OpenAI, Meta",
+    "target": "\"OpenAI\" AND \"Meta\""
+  },
+  {
+    "input": "Yann LeCun, Andrew Ng",
+    "target": "\"Yann LeCun\" AND \"Andrew Ng\""
+  },
+  {
+    "input": "deep learning, AI, NLP",
+    "target": "\"deep learning\" AND \"AI\" AND \"NLP\""
+  },
+  {
+    "input": "deep learning",
+    "target": "\"deep learning\""
+  },
+  {
+    "input": "Andrew Ng, Elon Musk, Yann LeCun",
+    "target": "\"Andrew Ng\" AND \"Elon Musk\" AND \"Yann LeCun\""
+  },
+  {
+    "input": "Andrew Ng, Yann LeCun, Elon Musk",
+    "target": "\"Andrew Ng\" AND \"Yann LeCun\" AND \"Elon Musk\""
+  },
+  {
+    "input": "Andrew Ng",
+    "target": "\"Andrew Ng\""
+  },
+  {
+    "input": "Tesla, Meta",
+    "target": "\"Tesla\" AND \"Meta\""
+  },
+  {
+    "input": "NLP, blockchain",
+    "target": "\"NLP\" AND \"blockchain\""
+  },
+  {
+    "input": "Elon Musk, Andrew Ng",
+    "target": "\"Elon Musk\" AND \"Andrew Ng\""
+  },
+  {
+    "input": "blockchain, NLP, AI",
+    "target": "\"blockchain\" AND \"NLP\" AND \"AI\""
+  },
+  {
+    "input": "Google, Tesla, Meta",
+    "target": "\"Google\" AND \"Tesla\" AND \"Meta\""
+  },
+  {
+    "input": "Elon Musk",
+    "target": "\"Elon Musk\""
+  },
+  {
+    "input": "machine learning, AI, blockchain",
+    "target": "\"machine learning\" AND \"AI\" AND \"blockchain\""
+  },
+  {
+    "input": "Elon Musk, Yann LeCun",
+    "target": "\"Elon Musk\" AND \"Yann LeCun\""
+  },
+  {
+    "input": "deep learning",
+    "target": "\"deep learning\""
+  },
+  {
+    "input": "AI, NLP, machine learning",
+    "target": "\"AI\" AND \"NLP\" AND \"machine learning\""
+  },
+  {
+    "input": "deep learning, machine learning, NLP",
+    "target": "\"deep learning\" AND \"machine learning\" AND \"NLP\""
+  },
+  {
+    "input": "Andrew Ng, Yann LeCun",
+    "target": "\"Andrew Ng\" AND \"Yann LeCun\""
+  },
+  {
+    "input": "Meta",
+    "target": "\"Meta\""
+  },
+  {
+    "input": "Yann LeCun, Elon Musk, Andrew Ng",
+    "target": "\"Yann LeCun\" AND \"Elon Musk\" AND \"Andrew Ng\""
+  },
+  {
+    "input": "Andrew Ng",
+    "target": "\"Andrew Ng\""
+  },
+  {
+    "input": "Elon Musk, Yann LeCun, Andrew Ng",
+    "target": "\"Elon Musk\" AND \"Yann LeCun\" AND \"Andrew Ng\""
+  },
+  {
+    "input": "Yann LeCun",
+    "target": "\"Yann LeCun\""
+  },
+  {
+    "input": "AI, deep learning",
+    "target": "\"AI\" AND \"deep learning\""
+  },
+  {
+    "input": "Yann LeCun",
+    "target": "\"Yann LeCun\""
+  },
+  {
+    "input": "Tesla, OpenAI",
+    "target": "\"Tesla\" AND \"OpenAI\""
+  },
+  {
+    "input": "OpenAI",
+    "target": "\"OpenAI\""
+  },
+  {
+    "input": "Meta, OpenAI",
+    "target": "\"Meta\" AND \"OpenAI\""
+  },
+  {
+    "input": "blockchain, NLP",
+    "target": "\"blockchain\" AND \"NLP\""
+  },
+  {
+    "input": "NLP",
+    "target": "\"NLP\""
+  },
+  {
+    "input": "Elon Musk, Yann LeCun",
+    "target": "\"Elon Musk\" AND \"Yann LeCun\""
+  },
+  {
+    "input": "Meta, Tesla",
+    "target": "\"Meta\" AND \"Tesla\""
+  },
+  {
+    "input": "Elon Musk, Yann LeCun, Andrew Ng",
+    "target": "\"Elon Musk\" AND \"Yann LeCun\" AND \"Andrew Ng\""
+  },
+  {
+    "input": "Google",
+    "target": "\"Google\""
+  },
+  {
+    "input": "NLP, AI",
+    "target": "\"NLP\" AND \"AI\""
+  },
+  {
+    "input": "NLP, blockchain",
+    "target": "\"NLP\" AND \"blockchain\""
+  },
+  {
+    "input": "OpenAI",
+    "target": "\"OpenAI\""
+  },
+  {
+    "input": "Yann LeCun, Andrew Ng",
+    "target": "\"Yann LeCun\" AND \"Andrew Ng\""
+  },
+  {
+    "input": "AI",
+    "target": "\"AI\""
+  },
+  {
+    "input": "Andrew Ng, Elon Musk",
+    "target": "\"Andrew Ng\" AND \"Elon Musk\""
+  },
+  {
+    "input": "AI",
+    "target": "\"AI\""
+  },
+  {
+    "input": "Google",
+    "target": "\"Google\""
+  },
+  {
+    "input": "deep learning",
+    "target": "\"deep learning\""
+  },
+  {
+    "input": "NLP, blockchain",
+    "target": "\"NLP\" AND \"blockchain\""
+  },
+  {
+    "input": "Tesla",
+    "target": "\"Tesla\""
+  },
+  {
+    "input": "Andrew Ng, Yann LeCun",
+    "target": "\"Andrew Ng\" AND \"Yann LeCun\""
+  },
+  {
+    "input": "AI, machine learning, NLP",
+    "target": "\"AI\" AND \"machine learning\" AND \"NLP\""
+  },
+  {
+    "input": "AI, machine learning, NLP",
+    "target": "\"AI\" AND \"machine learning\" AND \"NLP\""
+  },
+  {
+    "input": "Meta, Tesla, Google",
+    "target": "\"Meta\" AND \"Tesla\" AND \"Google\""
+  },
+  {
+    "input": "blockchain, NLP",
+    "target": "\"blockchain\" AND \"NLP\""
+  },
+  {
+    "input": "NLP",
+    "target": "\"NLP\""
+  },
+  {
+    "input": "Andrew Ng",
+    "target": "\"Andrew Ng\""
+  },
+  {
+    "input": "deep learning, AI",
+    "target": "\"deep learning\" AND \"AI\""
+  },
+  {
+    "input": "Elon Musk",
+    "target": "\"Elon Musk\""
+  },
+  {
+    "input": "Andrew Ng, Yann LeCun",
+    "target": "\"Andrew Ng\" AND \"Yann LeCun\""
+  },
+  {
+    "input": "Google, OpenAI",
+    "target": "\"Google\" AND \"OpenAI\""
+  },
+  {
+    "input": "blockchain",
+    "target": "\"blockchain\""
+  },
+  {
+    "input": "Andrew Ng",
+    "target": "\"Andrew Ng\""
+  },
+  {
+    "input": "AI, NLP, machine learning",
+    "target": "\"AI\" AND \"NLP\" AND \"machine learning\""
+  },
+  {
+    "input": "Yann LeCun",
+    "target": "\"Yann LeCun\""
+  },
+  {
+    "input": "Yann LeCun",
+    "target": "\"Yann LeCun\""
+  },
+  {
+    "input": "Yann LeCun",
+    "target": "\"Yann LeCun\""
+  },
+  {
+    "input": "Yann LeCun",
+    "target": "\"Yann LeCun\""
+  },
+  {
+    "input": "Elon Musk",
+    "target": "\"Elon Musk\""
+  },
+  {
+    "input": "Elon Musk, Andrew Ng",
+    "target": "\"Elon Musk\" AND \"Andrew Ng\""
+  },
+  {
+    "input": "Tesla, Google, Meta",
+    "target": "\"Tesla\" AND \"Google\" AND \"Meta\""
+  },
+  {
+    "input": "deep learning, machine learning",
+    "target": "\"deep learning\" AND \"machine learning\""
+  },
+  {
+    "input": "blockchain, machine learning, deep learning",
+    "target": "\"blockchain\" AND \"machine learning\" AND \"deep learning\""
+  },
+  {
+    "input": "Yann LeCun, Elon Musk, Andrew Ng",
+    "target": "\"Yann LeCun\" AND \"Elon Musk\" AND \"Andrew Ng\""
+  },
+  {
+    "input": "machine learning, NLP",
+    "target": "\"machine learning\" AND \"NLP\""
+  },
+  {
+    "input": "Meta, Tesla",
+    "target": "\"Meta\" AND \"Tesla\""
+  },
+  {
+    "input": "deep learning, NLP",
+    "target": "\"deep learning\" AND \"NLP\""
+  },
+  {
+    "input": "Yann LeCun, Elon Musk, Andrew Ng",
+    "target": "\"Yann LeCun\" AND \"Elon Musk\" AND \"Andrew Ng\""
+  },
+  {
+    "input": "Yann LeCun, Elon Musk",
+    "target": "\"Yann LeCun\" AND \"Elon Musk\""
+  },
+  {
+    "input": "Meta, OpenAI",
+    "target": "\"Meta\" AND \"OpenAI\""
+  },
+  {
+    "input": "Elon Musk",
+    "target": "\"Elon Musk\""
+  },
+  {
+    "input": "NLP",
+    "target": "\"NLP\""
+  },
+  {
+    "input": "NLP, AI",
+    "target": "\"NLP\" AND \"AI\""
+  },
+  {
+    "input": "Meta",
+    "target": "\"Meta\""
+  },
+  {
+    "input": "NLP",
+    "target": "\"NLP\""
+  },
+  {
+    "input": "Elon Musk, Yann LeCun",
+    "target": "\"Elon Musk\" AND \"Yann LeCun\""
+  },
+  {
+    "input": "Elon Musk",
+    "target": "\"Elon Musk\""
+  },
+  {
+    "input": "Elon Musk, Yann LeCun",
+    "target": "\"Elon Musk\" AND \"Yann LeCun\""
+  },
+  {
+    "input": "Tesla, Meta, OpenAI",
+    "target": "\"Tesla\" AND \"Meta\" AND \"OpenAI\""
+  },
+  {
+    "input": "Yann LeCun",
+    "target": "\"Yann LeCun\""
+  },
+  {
+    "input": "Tesla",
+    "target": "\"Tesla\""
+  },
+  {
+    "input": "AI, machine learning",
+    "target": "\"AI\" AND \"machine learning\""
+  },
+  {
+    "input": "blockchain, AI, deep learning",
+    "target": "\"blockchain\" AND \"AI\" AND \"deep learning\""
+  },
+  {
+    "input": "machine learning, blockchain, AI",
+    "target": "\"machine learning\" AND \"blockchain\" AND \"AI\""
+  },
+  {
+    "input": "Elon Musk",
+    "target": "\"Elon Musk\""
+  },
+  {
+    "input": "AI",
+    "target": "\"AI\""
+  },
+  {
+    "input": "Elon Musk",
+    "target": "\"Elon Musk\""
+  },
+  {
+    "input": "NLP, blockchain",
+    "target": "\"NLP\" AND \"blockchain\""
+  },
+  {
+    "input": "Andrew Ng",
+    "target": "\"Andrew Ng\""
+  },
+  {
+    "input": "blockchain",
+    "target": "\"blockchain\""
+  },
+  {
+    "input": "OpenAI, Google, Meta",
+    "target": "\"OpenAI\" AND \"Google\" AND \"Meta\""
+  },
+  {
+    "input": "OpenAI, Google",
+    "target": "\"OpenAI\" AND \"Google\""
+  },
+  {
+    "input": "Yann LeCun, Andrew Ng",
+    "target": "\"Yann LeCun\" AND \"Andrew Ng\""
+  },
+  {
+    "input": "deep learning, NLP",
+    "target": "\"deep learning\" AND \"NLP\""
+  },
+  {
+    "input": "machine learning, AI, NLP",
+    "target": "\"machine learning\" AND \"AI\" AND \"NLP\""
+  },
+  {
+    "input": "NLP",
+    "target": "\"NLP\""
+  },
+  {
+    "input": "Andrew Ng, Elon Musk",
+    "target": "\"Andrew Ng\" AND \"Elon Musk\""
+  },
+  {
+    "input": "machine learning, AI, deep learning",
+    "target": "\"machine learning\" AND \"AI\" AND \"deep learning\""
+  },
+  {
+    "input": "Tesla",
+    "target": "\"Tesla\""
+  },
+  {
+    "input": "blockchain, NLP",
+    "target": "\"blockchain\" AND \"NLP\""
+  },
+  {
+    "input": "Yann LeCun, Elon Musk",
+    "target": "\"Yann LeCun\" AND \"Elon Musk\""
+  },
+  {
+    "input": "Elon Musk, Andrew Ng, Yann LeCun",
+    "target": "\"Elon Musk\" AND \"Andrew Ng\" AND \"Yann LeCun\""
+  },
+  {
+    "input": "machine learning, AI, blockchain",
+    "target": "\"machine learning\" AND \"AI\" AND \"blockchain\""
+  },
+  {
+    "input": "Meta, Tesla",
+    "target": "\"Meta\" AND \"Tesla\""
+  },
+  {
+    "input": "Andrew Ng, Elon Musk",
+    "target": "\"Andrew Ng\" AND \"Elon Musk\""
+  },
+  {
+    "input": "Yann LeCun, Andrew Ng",
+    "target": "\"Yann LeCun\" AND \"Andrew Ng\""
+  },
+  {
+    "input": "machine learning",
+    "target": "\"machine learning\""
+  },
+  {
+    "input": "Andrew Ng, Yann LeCun",
+    "target": "\"Andrew Ng\" AND \"Yann LeCun\""
+  },
+  {
+    "input": "NLP, AI",
+    "target": "\"NLP\" AND \"AI\""
+  },
+  {
+    "input": "NLP, blockchain",
+    "target": "\"NLP\" AND \"blockchain\""
+  },
+  {
+    "input": "Andrew Ng, Yann LeCun",
+    "target": "\"Andrew Ng\" AND \"Yann LeCun\""
+  },
+  {
+    "input": "Yann LeCun, Andrew Ng, Elon Musk",
+    "target": "\"Yann LeCun\" AND \"Andrew Ng\" AND \"Elon Musk\""
+  },
+  {
+    "input": "OpenAI",
+    "target": "\"OpenAI\""
+  },
+  {
+    "input": "AI",
+    "target": "\"AI\""
+  },
+  {
+    "input": "Andrew Ng, Yann LeCun",
+    "target": "\"Andrew Ng\" AND \"Yann LeCun\""
+  },
+  {
+    "input": "AI, NLP, deep learning",
+    "target": "\"AI\" AND \"NLP\" AND \"deep learning\""
+  },
+  {
+    "input": "Google, Tesla, OpenAI",
+    "target": "\"Google\" AND \"Tesla\" AND \"OpenAI\""
+  },
+  {
+    "input": "Yann LeCun, Andrew Ng, Elon Musk",
+    "target": "\"Yann LeCun\" AND \"Andrew Ng\" AND \"Elon Musk\""
+  },
+  {
+    "input": "AI, NLP, deep learning",
+    "target": "\"AI\" AND \"NLP\" AND \"deep learning\""
+  },
+  {
+    "input": "Tesla, OpenAI",
+    "target": "\"Tesla\" AND \"OpenAI\""
+  },
+  {
+    "input": "blockchain, NLP",
+    "target": "\"blockchain\" AND \"NLP\""
+  },
+  {
+    "input": "Andrew Ng",
+    "target": "\"Andrew Ng\""
+  },
+  {
+    "input": "Google, OpenAI, Tesla",
+    "target": "\"Google\" AND \"OpenAI\" AND \"Tesla\""
+  },
+  {
+    "input": "Elon Musk, Andrew Ng",
+    "target": "\"Elon Musk\" AND \"Andrew Ng\""
+  },
+  {
+    "input": "deep learning, NLP, AI",
+    "target": "\"deep learning\" AND \"NLP\" AND \"AI\""
+  },
+  {
+    "input": "OpenAI, Google, Tesla",
+    "target": "\"OpenAI\" AND \"Google\" AND \"Tesla\""
+  },
+  {
+    "input": "OpenAI, Tesla, Meta",
+    "target": "\"OpenAI\" AND \"Tesla\" AND \"Meta\""
+  },
+  {
+    "input": "Elon Musk, Andrew Ng, Yann LeCun",
+    "target": "\"Elon Musk\" AND \"Andrew Ng\" AND \"Yann LeCun\""
+  },
+  {
+    "input": "Google",
+    "target": "\"Google\""
+  },
+  {
+    "input": "Yann LeCun, Andrew Ng, Elon Musk",
+    "target": "\"Yann LeCun\" AND \"Andrew Ng\" AND \"Elon Musk\""
+  },
+  {
+    "input": "NLP, deep learning",
+    "target": "\"NLP\" AND \"deep learning\""
+  },
+  {
+    "input": "Meta",
+    "target": "\"Meta\""
+  },
+  {
+    "input": "Elon Musk, Andrew Ng, Yann LeCun",
+    "target": "\"Elon Musk\" AND \"Andrew Ng\" AND \"Yann LeCun\""
+  },
+  {
+    "input": "blockchain",
+    "target": "\"blockchain\""
+  },
+  {
+    "input": "Elon Musk",
+    "target": "\"Elon Musk\""
+  },
+  {
+    "input": "Tesla, OpenAI, Meta",
+    "target": "\"Tesla\" AND \"OpenAI\" AND \"Meta\""
+  },
+  {
+    "input": "Tesla",
+    "target": "\"Tesla\""
+  },
+  {
+    "input": "Meta",
+    "target": "\"Meta\""
+  },
+  {
+    "input": "Meta, Google, Tesla",
+    "target": "\"Meta\" AND \"Google\" AND \"Tesla\""
+  },
+  {
+    "input": "OpenAI",
+    "target": "\"OpenAI\""
+  },
+  {
+    "input": "Yann LeCun, Elon Musk",
+    "target": "\"Yann LeCun\" AND \"Elon Musk\""
+  },
+  {
+    "input": "Elon Musk, Andrew Ng",
+    "target": "\"Elon Musk\" AND \"Andrew Ng\""
+  },
+  {
+    "input": "Tesla, Google, Meta",
+    "target": "\"Tesla\" AND \"Google\" AND \"Meta\""
+  },
+  {
+    "input": "blockchain, machine learning, deep learning",
+    "target": "\"blockchain\" AND \"machine learning\" AND \"deep learning\""
+  },
+  {
+    "input": "deep learning, NLP, machine learning",
+    "target": "\"deep learning\" AND \"NLP\" AND \"machine learning\""
+  },
+  {
+    "input": "Yann LeCun",
+    "target": "\"Yann LeCun\""
+  },
+  {
+    "input": "blockchain",
+    "target": "\"blockchain\""
+  },
+  {
+    "input": "Tesla, OpenAI, Meta",
+    "target": "\"Tesla\" AND \"OpenAI\" AND \"Meta\""
+  },
+  {
+    "input": "Meta, OpenAI",
+    "target": "\"Meta\" AND \"OpenAI\""
+  },
+  {
+    "input": "Andrew Ng, Elon Musk",
+    "target": "\"Andrew Ng\" AND \"Elon Musk\""
+  },
+  {
+    "input": "Google, Meta",
+    "target": "\"Google\" AND \"Meta\""
+  },
+  {
+    "input": "OpenAI, Tesla",
+    "target": "\"OpenAI\" AND \"Tesla\""
+  },
+  {
+    "input": "blockchain, NLP",
+    "target": "\"blockchain\" AND \"NLP\""
+  },
+  {
+    "input": "NLP, machine learning",
+    "target": "\"NLP\" AND \"machine learning\""
+  },
+  {
+    "input": "Yann LeCun",
+    "target": "\"Yann LeCun\""
+  },
+  {
+    "input": "Meta, Tesla",
+    "target": "\"Meta\" AND \"Tesla\""
+  },
+  {
+    "input": "Tesla, OpenAI, Google",
+    "target": "\"Tesla\" AND \"OpenAI\" AND \"Google\""
+  },
+  {
+    "input": "Yann LeCun, Andrew Ng",
+    "target": "\"Yann LeCun\" AND \"Andrew Ng\""
+  },
+  {
+    "input": "deep learning, NLP",
+    "target": "\"deep learning\" AND \"NLP\""
+  },
+  {
+    "input": "Meta",
+    "target": "\"Meta\""
+  },
+  {
+    "input": "Elon Musk",
+    "target": "\"Elon Musk\""
+  },
+  {
+    "input": "Elon Musk, Andrew Ng",
+    "target": "\"Elon Musk\" AND \"Andrew Ng\""
+  },
+  {
+    "input": "Yann LeCun",
+    "target": "\"Yann LeCun\""
+  },
+  {
+    "input": "machine learning, blockchain",
+    "target": "\"machine learning\" AND \"blockchain\""
+  },
+  {
+    "input": "blockchain",
+    "target": "\"blockchain\""
+  },
+  {
+    "input": "Tesla, OpenAI",
+    "target": "\"Tesla\" AND \"OpenAI\""
+  },
+  {
+    "input": "OpenAI, Google, Meta",
+    "target": "\"OpenAI\" AND \"Google\" AND \"Meta\""
+  },
+  {
+    "input": "Andrew Ng, Yann LeCun",
+    "target": "\"Andrew Ng\" AND \"Yann LeCun\""
+  },
+  {
+    "input": "Yann LeCun, Elon Musk, Andrew Ng",
+    "target": "\"Yann LeCun\" AND \"Elon Musk\" AND \"Andrew Ng\""
+  },
+  {
+    "input": "blockchain",
+    "target": "\"blockchain\""
+  },
+  {
+    "input": "deep learning, AI",
+    "target": "\"deep learning\" AND \"AI\""
+  },
+  {
+    "input": "Andrew Ng, Yann LeCun",
+    "target": "\"Andrew Ng\" AND \"Yann LeCun\""
+  },
+  {
+    "input": "deep learning",
+    "target": "\"deep learning\""
+  },
+  {
+    "input": "Meta, Google, OpenAI",
+    "target": "\"Meta\" AND \"Google\" AND \"OpenAI\""
+  },
+  {
+    "input": "Tesla, Google",
+    "target": "\"Tesla\" AND \"Google\""
+  },
+  {
+    "input": "deep learning, NLP, AI",
+    "target": "\"deep learning\" AND \"NLP\" AND \"AI\""
+  },
+  {
+    "input": "Andrew Ng, Elon Musk",
+    "target": "\"Andrew Ng\" AND \"Elon Musk\""
+  },
+  {
+    "input": "AI, machine learning, NLP",
+    "target": "\"AI\" AND \"machine learning\" AND \"NLP\""
+  },
+  {
+    "input": "Andrew Ng, Yann LeCun",
+    "target": "\"Andrew Ng\" AND \"Yann LeCun\""
+  },
+  {
+    "input": "AI, blockchain, NLP",
+    "target": "\"AI\" AND \"blockchain\" AND \"NLP\""
+  },
+  {
+    "input": "NLP, blockchain",
+    "target": "\"NLP\" AND \"blockchain\""
+  },
+  {
+    "input": "AI",
+    "target": "\"AI\""
+  },
+  {
+    "input": "blockchain, AI, machine learning",
+    "target": "\"blockchain\" AND \"AI\" AND \"machine learning\""
+  },
+  {
+    "input": "Google, Meta, OpenAI",
+    "target": "\"Google\" AND \"Meta\" AND \"OpenAI\""
+  },
+  {
+    "input": "machine learning, blockchain",
+    "target": "\"machine learning\" AND \"blockchain\""
+  },
+  {
+    "input": "AI",
+    "target": "\"AI\""
+  },
+  {
+    "input": "Tesla, Google, Meta",
+    "target": "\"Tesla\" AND \"Google\" AND \"Meta\""
+  },
+  {
+    "input": "deep learning, AI",
+    "target": "\"deep learning\" AND \"AI\""
+  },
+  {
+    "input": "Andrew Ng",
+    "target": "\"Andrew Ng\""
+  },
+  {
+    "input": "Elon Musk, Yann LeCun, Andrew Ng",
+    "target": "\"Elon Musk\" AND \"Yann LeCun\" AND \"Andrew Ng\""
+  },
+  {
+    "input": "Google, Meta, OpenAI",
+    "target": "\"Google\" AND \"Meta\" AND \"OpenAI\""
+  },
+  {
+    "input": "Yann LeCun, Elon Musk",
+    "target": "\"Yann LeCun\" AND \"Elon Musk\""
+  },
+  {
+    "input": "Andrew Ng, Yann LeCun",
+    "target": "\"Andrew Ng\" AND \"Yann LeCun\""
+  },
+  {
+    "input": "blockchain",
+    "target": "\"blockchain\""
+  },
+  {
+    "input": "OpenAI, Meta, Google",
+    "target": "\"OpenAI\" AND \"Meta\" AND \"Google\""
+  },
+  {
+    "input": "Elon Musk, Andrew Ng",
+    "target": "\"Elon Musk\" AND \"Andrew Ng\""
+  },
+  {
+    "input": "Tesla",
+    "target": "\"Tesla\""
+  },
+  {
+    "input": "OpenAI, Tesla, Meta",
+    "target": "\"OpenAI\" AND \"Tesla\" AND \"Meta\""
+  },
+  {
+    "input": "blockchain, NLP, AI",
+    "target": "\"blockchain\" AND \"NLP\" AND \"AI\""
+  },
+  {
+    "input": "Google, OpenAI",
+    "target": "\"Google\" AND \"OpenAI\""
+  },
+  {
+    "input": "NLP, deep learning",
+    "target": "\"NLP\" AND \"deep learning\""
+  },
+  {
+    "input": "deep learning",
+    "target": "\"deep learning\""
+  },
+  {
+    "input": "NLP, machine learning",
+    "target": "\"NLP\" AND \"machine learning\""
+  },
+  {
+    "input": "machine learning, AI",
+    "target": "\"machine learning\" AND \"AI\""
+  },
+  {
+    "input": "Andrew Ng",
+    "target": "\"Andrew Ng\""
+  },
+  {
+    "input": "Yann LeCun, Elon Musk, Andrew Ng",
+    "target": "\"Yann LeCun\" AND \"Elon Musk\" AND \"Andrew Ng\""
+  },
+  {
+    "input": "Elon Musk",
+    "target": "\"Elon Musk\""
+  },
+  {
+    "input": "Google, Tesla, OpenAI",
+    "target": "\"Google\" AND \"Tesla\" AND \"OpenAI\""
+  },
+  {
+    "input": "blockchain, deep learning, NLP",
+    "target": "\"blockchain\" AND \"deep learning\" AND \"NLP\""
+  },
+  {
+    "input": "blockchain",
+    "target": "\"blockchain\""
+  },
+  {
+    "input": "Elon Musk",
+    "target": "\"Elon Musk\""
+  },
+  {
+    "input": "Elon Musk, Andrew Ng, Yann LeCun",
+    "target": "\"Elon Musk\" AND \"Andrew Ng\" AND \"Yann LeCun\""
+  },
+  {
+    "input": "Elon Musk, Yann LeCun",
+    "target": "\"Elon Musk\" AND \"Yann LeCun\""
+  },
+  {
+    "input": "Tesla",
+    "target": "\"Tesla\""
+  },
+  {
+    "input": "Elon Musk, Andrew Ng",
+    "target": "\"Elon Musk\" AND \"Andrew Ng\""
+  },
+  {
+    "input": "Andrew Ng, Elon Musk, Yann LeCun",
+    "target": "\"Andrew Ng\" AND \"Elon Musk\" AND \"Yann LeCun\""
+  },
+  {
+    "input": "Andrew Ng, Elon Musk, Yann LeCun",
+    "target": "\"Andrew Ng\" AND \"Elon Musk\" AND \"Yann LeCun\""
+  },
+  {
+    "input": "deep learning",
+    "target": "\"deep learning\""
+  },
+  {
+    "input": "AI",
+    "target": "\"AI\""
+  },
+  {
+    "input": "machine learning",
+    "target": "\"machine learning\""
+  },
+  {
+    "input": "AI, blockchain",
+    "target": "\"AI\" AND \"blockchain\""
+  },
+  {
+    "input": "OpenAI, Google",
+    "target": "\"OpenAI\" AND \"Google\""
+  },
+  {
+    "input": "Tesla, OpenAI, Meta",
+    "target": "\"Tesla\" AND \"OpenAI\" AND \"Meta\""
+  },
+  {
+    "input": "AI, deep learning",
+    "target": "\"AI\" AND \"deep learning\""
+  },
+  {
+    "input": "Tesla, Google",
+    "target": "\"Tesla\" AND \"Google\""
+  },
+  {
+    "input": "Meta, Google, OpenAI",
+    "target": "\"Meta\" AND \"Google\" AND \"OpenAI\""
+  },
+  {
+    "input": "blockchain, AI",
+    "target": "\"blockchain\" AND \"AI\""
+  },
+  {
+    "input": "Tesla, Google",
+    "target": "\"Tesla\" AND \"Google\""
+  },
+  {
+    "input": "NLP, AI, deep learning",
+    "target": "\"NLP\" AND \"AI\" AND \"deep learning\""
+  },
+  {
+    "input": "Tesla, Meta",
+    "target": "\"Tesla\" AND \"Meta\""
+  },
+  {
+    "input": "Meta, OpenAI",
+    "target": "\"Meta\" AND \"OpenAI\""
+  },
+  {
+    "input": "Google, OpenAI",
+    "target": "\"Google\" AND \"OpenAI\""
+  },
+  {
+    "input": "Meta",
+    "target": "\"Meta\""
+  },
+  {
+    "input": "Tesla, OpenAI",
+    "target": "\"Tesla\" AND \"OpenAI\""
+  },
+  {
+    "input": "Google, OpenAI, Tesla",
+    "target": "\"Google\" AND \"OpenAI\" AND \"Tesla\""
+  },
+  {
+    "input": "blockchain, machine learning",
+    "target": "\"blockchain\" AND \"machine learning\""
+  },
+  {
+    "input": "blockchain",
+    "target": "\"blockchain\""
+  },
+  {
+    "input": "Elon Musk, Yann LeCun",
+    "target": "\"Elon Musk\" AND \"Yann LeCun\""
+  },
+  {
+    "input": "NLP, deep learning",
+    "target": "\"NLP\" AND \"deep learning\""
+  },
+  {
+    "input": "Andrew Ng",
+    "target": "\"Andrew Ng\""
+  },
+  {
+    "input": "AI",
+    "target": "\"AI\""
+  },
+  {
+    "input": "NLP, blockchain",
+    "target": "\"NLP\" AND \"blockchain\""
+  },
+  {
+    "input": "OpenAI, Google, Tesla",
+    "target": "\"OpenAI\" AND \"Google\" AND \"Tesla\""
+  },
+  {
+    "input": "OpenAI, Google",
+    "target": "\"OpenAI\" AND \"Google\""
+  },
+  {
+    "input": "Google",
+    "target": "\"Google\""
+  },
+  {
+    "input": "AI, blockchain, machine learning",
+    "target": "\"AI\" AND \"blockchain\" AND \"machine learning\""
+  },
+  {
+    "input": "Tesla",
+    "target": "\"Tesla\""
+  },
+  {
+    "input": "Yann LeCun",
+    "target": "\"Yann LeCun\""
+  },
+  {
+    "input": "AI, machine learning, deep learning",
+    "target": "\"AI\" AND \"machine learning\" AND \"deep learning\""
+  },
+  {
+    "input": "machine learning, NLP",
+    "target": "\"machine learning\" AND \"NLP\""
+  },
+  {
+    "input": "Yann LeCun",
+    "target": "\"Yann LeCun\""
+  },
+  {
+    "input": "Google, OpenAI, Tesla",
+    "target": "\"Google\" AND \"OpenAI\" AND \"Tesla\""
+  },
+  {
+    "input": "Meta, OpenAI",
+    "target": "\"Meta\" AND \"OpenAI\""
+  },
+  {
+    "input": "machine learning",
+    "target": "\"machine learning\""
+  },
+  {
+    "input": "Andrew Ng, Yann LeCun, Elon Musk",
+    "target": "\"Andrew Ng\" AND \"Yann LeCun\" AND \"Elon Musk\""
+  },
+  {
+    "input": "machine learning",
+    "target": "\"machine learning\""
+  },
+  {
+    "input": "Yann LeCun, Elon Musk",
+    "target": "\"Yann LeCun\" AND \"Elon Musk\""
+  },
+  {
+    "input": "Elon Musk, Yann LeCun",
+    "target": "\"Elon Musk\" AND \"Yann LeCun\""
+  },
+  {
+    "input": "Elon Musk, Yann LeCun, Andrew Ng",
+    "target": "\"Elon Musk\" AND \"Yann LeCun\" AND \"Andrew Ng\""
+  },
+  {
+    "input": "Tesla, OpenAI, Meta",
+    "target": "\"Tesla\" AND \"OpenAI\" AND \"Meta\""
+  },
+  {
+    "input": "Elon Musk",
+    "target": "\"Elon Musk\""
+  },
+  {
+    "input": "Yann LeCun",
+    "target": "\"Yann LeCun\""
+  },
+  {
+    "input": "NLP, blockchain, machine learning",
+    "target": "\"NLP\" AND \"blockchain\" AND \"machine learning\""
+  },
+  {
+    "input": "blockchain",
+    "target": "\"blockchain\""
+  },
+  {
+    "input": "Andrew Ng, Elon Musk, Yann LeCun",
+    "target": "\"Andrew Ng\" AND \"Elon Musk\" AND \"Yann LeCun\""
+  },
+  {
+    "input": "Meta, Tesla, Google",
+    "target": "\"Meta\" AND \"Tesla\" AND \"Google\""
+  },
+  {
+    "input": "Yann LeCun",
+    "target": "\"Yann LeCun\""
+  },
+  {
+    "input": "AI, blockchain",
+    "target": "\"AI\" AND \"blockchain\""
+  },
+  {
+    "input": "Meta, OpenAI, Tesla",
+    "target": "\"Meta\" AND \"OpenAI\" AND \"Tesla\""
+  },
+  {
+    "input": "Elon Musk, Andrew Ng, Yann LeCun",
+    "target": "\"Elon Musk\" AND \"Andrew Ng\" AND \"Yann LeCun\""
+  },
+  {
+    "input": "Andrew Ng, Yann LeCun",
+    "target": "\"Andrew Ng\" AND \"Yann LeCun\""
+  },
+  {
+    "input": "Andrew Ng, Yann LeCun, Elon Musk",
+    "target": "\"Andrew Ng\" AND \"Yann LeCun\" AND \"Elon Musk\""
+  },
+  {
+    "input": "Yann LeCun",
+    "target": "\"Yann LeCun\""
+  },
+  {
+    "input": "machine learning, blockchain",
+    "target": "\"machine learning\" AND \"blockchain\""
+  },
+  {
+    "input": "machine learning",
+    "target": "\"machine learning\""
+  },
+  {
+    "input": "Tesla",
+    "target": "\"Tesla\""
+  },
+  {
+    "input": "deep learning, NLP",
+    "target": "\"deep learning\" AND \"NLP\""
+  },
+  {
+    "input": "Meta, Google, OpenAI",
+    "target": "\"Meta\" AND \"Google\" AND \"OpenAI\""
+  },
+  {
+    "input": "Tesla, Google, OpenAI",
+    "target": "\"Tesla\" AND \"Google\" AND \"OpenAI\""
+  },
+  {
+    "input": "Meta, Google",
+    "target": "\"Meta\" AND \"Google\""
+  },
+  {
+    "input": "Andrew Ng",
+    "target": "\"Andrew Ng\""
+  },
+  {
+    "input": "Meta, Google, Tesla",
+    "target": "\"Meta\" AND \"Google\" AND \"Tesla\""
+  },
+  {
+    "input": "deep learning",
+    "target": "\"deep learning\""
+  },
+  {
+    "input": "deep learning, AI",
+    "target": "\"deep learning\" AND \"AI\""
+  },
+  {
+    "input": "Elon Musk, Andrew Ng",
+    "target": "\"Elon Musk\" AND \"Andrew Ng\""
+  },
+  {
+    "input": "OpenAI, Tesla, Google",
+    "target": "\"OpenAI\" AND \"Tesla\" AND \"Google\""
+  },
+  {
+    "input": "OpenAI, Google",
+    "target": "\"OpenAI\" AND \"Google\""
+  },
+  {
+    "input": "AI, NLP, machine learning",
+    "target": "\"AI\" AND \"NLP\" AND \"machine learning\""
+  },
+  {
+    "input": "Elon Musk, Andrew Ng",
+    "target": "\"Elon Musk\" AND \"Andrew Ng\""
+  },
+  {
+    "input": "Elon Musk, Andrew Ng, Yann LeCun",
+    "target": "\"Elon Musk\" AND \"Andrew Ng\" AND \"Yann LeCun\""
+  },
+  {
+    "input": "blockchain, machine learning, deep learning",
+    "target": "\"blockchain\" AND \"machine learning\" AND \"deep learning\""
+  },
+  {
+    "input": "Andrew Ng, Elon Musk",
+    "target": "\"Andrew Ng\" AND \"Elon Musk\""
+  },
+  {
+    "input": "NLP, machine learning",
+    "target": "\"NLP\" AND \"machine learning\""
+  },
+  {
+    "input": "Meta, Google, OpenAI",
+    "target": "\"Meta\" AND \"Google\" AND \"OpenAI\""
+  },
+  {
+    "input": "blockchain",
+    "target": "\"blockchain\""
+  },
+  {
+    "input": "AI",
+    "target": "\"AI\""
+  },
+  {
+    "input": "Andrew Ng, Yann LeCun, Elon Musk",
+    "target": "\"Andrew Ng\" AND \"Yann LeCun\" AND \"Elon Musk\""
+  },
+  {
+    "input": "blockchain, machine learning",
+    "target": "\"blockchain\" AND \"machine learning\""
+  },
+  {
+    "input": "Andrew Ng, Elon Musk, Yann LeCun",
+    "target": "\"Andrew Ng\" AND \"Elon Musk\" AND \"Yann LeCun\""
+  },
+  {
+    "input": "Andrew Ng",
+    "target": "\"Andrew Ng\""
+  },
+  {
+    "input": "Andrew Ng, Yann LeCun, Elon Musk",
+    "target": "\"Andrew Ng\" AND \"Yann LeCun\" AND \"Elon Musk\""
+  },
+  {
+    "input": "NLP, AI, machine learning",
+    "target": "\"NLP\" AND \"AI\" AND \"machine learning\""
+  },
+  {
+    "input": "Elon Musk, Andrew Ng, Yann LeCun",
+    "target": "\"Elon Musk\" AND \"Andrew Ng\" AND \"Yann LeCun\""
+  },
+  {
+    "input": "AI",
+    "target": "\"AI\""
+  },
+  {
+    "input": "Andrew Ng, Elon Musk",
+    "target": "\"Andrew Ng\" AND \"Elon Musk\""
+  },
+  {
+    "input": "Andrew Ng, Elon Musk",
+    "target": "\"Andrew Ng\" AND \"Elon Musk\""
+  },
+  {
+    "input": "Tesla, OpenAI, Google",
+    "target": "\"Tesla\" AND \"OpenAI\" AND \"Google\""
+  },
+  {
+    "input": "AI, blockchain, machine learning",
+    "target": "\"AI\" AND \"blockchain\" AND \"machine learning\""
+  },
+  {
+    "input": "Tesla",
+    "target": "\"Tesla\""
+  },
+  {
+    "input": "Tesla",
+    "target": "\"Tesla\""
+  },
+  {
+    "input": "AI, NLP",
+    "target": "\"AI\" AND \"NLP\""
+  },
+  {
+    "input": "Meta, Tesla, OpenAI",
+    "target": "\"Meta\" AND \"Tesla\" AND \"OpenAI\""
+  },
+  {
+    "input": "AI, machine learning",
+    "target": "\"AI\" AND \"machine learning\""
+  },
+  {
+    "input": "Tesla, OpenAI",
+    "target": "\"Tesla\" AND \"OpenAI\""
+  },
+  {
+    "input": "Tesla, OpenAI, Google",
+    "target": "\"Tesla\" AND \"OpenAI\" AND \"Google\""
+  },
+  {
+    "input": "Andrew Ng, Elon Musk, Yann LeCun",
+    "target": "\"Andrew Ng\" AND \"Elon Musk\" AND \"Yann LeCun\""
+  },
+  {
+    "input": "Google, Tesla, OpenAI",
+    "target": "\"Google\" AND \"Tesla\" AND \"OpenAI\""
+  },
+  {
+    "input": "Andrew Ng",
+    "target": "\"Andrew Ng\""
+  },
+  {
+    "input": "NLP, machine learning",
+    "target": "\"NLP\" AND \"machine learning\""
+  },
+  {
+    "input": "Tesla, OpenAI",
+    "target": "\"Tesla\" AND \"OpenAI\""
+  },
+  {
+    "input": "Meta",
+    "target": "\"Meta\""
+  },
+  {
+    "input": "Tesla, Meta, Google",
+    "target": "\"Tesla\" AND \"Meta\" AND \"Google\""
+  },
+  {
+    "input": "Andrew Ng, Yann LeCun",
+    "target": "\"Andrew Ng\" AND \"Yann LeCun\""
+  },
+  {
+    "input": "Elon Musk, Andrew Ng, Yann LeCun",
+    "target": "\"Elon Musk\" AND \"Andrew Ng\" AND \"Yann LeCun\""
+  },
+  {
+    "input": "machine learning",
+    "target": "\"machine learning\""
+  },
+  {
+    "input": "Yann LeCun, Elon Musk, Andrew Ng",
+    "target": "\"Yann LeCun\" AND \"Elon Musk\" AND \"Andrew Ng\""
+  },
+  {
+    "input": "Google, Tesla",
+    "target": "\"Google\" AND \"Tesla\""
+  },
+  {
+    "input": "Andrew Ng, Yann LeCun",
+    "target": "\"Andrew Ng\" AND \"Yann LeCun\""
+  },
+  {
+    "input": "Andrew Ng",
+    "target": "\"Andrew Ng\""
+  },
+  {
+    "input": "Tesla",
+    "target": "\"Tesla\""
+  },
+  {
+    "input": "Tesla, Meta, OpenAI",
+    "target": "\"Tesla\" AND \"Meta\" AND \"OpenAI\""
+  },
+  {
+    "input": "Tesla",
+    "target": "\"Tesla\""
+  },
+  {
+    "input": "Google, Tesla",
+    "target": "\"Google\" AND \"Tesla\""
+  },
+  {
+    "input": "Tesla, Meta",
+    "target": "\"Tesla\" AND \"Meta\""
+  },
+  {
+    "input": "deep learning, AI",
+    "target": "\"deep learning\" AND \"AI\""
+  },
+  {
+    "input": "Yann LeCun",
+    "target": "\"Yann LeCun\""
+  },
+  {
+    "input": "Google, OpenAI",
+    "target": "\"Google\" AND \"OpenAI\""
+  },
+  {
+    "input": "deep learning, blockchain",
+    "target": "\"deep learning\" AND \"blockchain\""
+  },
+  {
+    "input": "Elon Musk",
+    "target": "\"Elon Musk\""
+  },
+  {
+    "input": "Yann LeCun, Elon Musk, Andrew Ng",
+    "target": "\"Yann LeCun\" AND \"Elon Musk\" AND \"Andrew Ng\""
+  },
+  {
+    "input": "blockchain, AI, NLP",
+    "target": "\"blockchain\" AND \"AI\" AND \"NLP\""
+  },
+  {
+    "input": "Yann LeCun",
+    "target": "\"Yann LeCun\""
+  },
+  {
+    "input": "OpenAI",
+    "target": "\"OpenAI\""
+  },
+  {
+    "input": "blockchain, deep learning, AI",
+    "target": "\"blockchain\" AND \"deep learning\" AND \"AI\""
+  },
+  {
+    "input": "Yann LeCun, Elon Musk",
+    "target": "\"Yann LeCun\" AND \"Elon Musk\""
+  },
+  {
+    "input": "Yann LeCun, Andrew Ng",
+    "target": "\"Yann LeCun\" AND \"Andrew Ng\""
+  },
+  {
+    "input": "Elon Musk, Yann LeCun",
+    "target": "\"Elon Musk\" AND \"Yann LeCun\""
+  },
+  {
+    "input": "deep learning, machine learning, blockchain",
+    "target": "\"deep learning\" AND \"machine learning\" AND \"blockchain\""
+  },
+  {
+    "input": "Yann LeCun",
+    "target": "\"Yann LeCun\""
+  },
+  {
+    "input": "AI",
+    "target": "\"AI\""
+  },
+  {
+    "input": "Elon Musk",
+    "target": "\"Elon Musk\""
+  },
+  {
+    "input": "Andrew Ng, Elon Musk, Yann LeCun",
+    "target": "\"Andrew Ng\" AND \"Elon Musk\" AND \"Yann LeCun\""
+  },
+  {
+    "input": "OpenAI, Tesla, Google",
+    "target": "\"OpenAI\" AND \"Tesla\" AND \"Google\""
+  },
+  {
+    "input": "blockchain, NLP, machine learning",
+    "target": "\"blockchain\" AND \"NLP\" AND \"machine learning\""
+  },
+  {
+    "input": "Meta, Google, Tesla",
+    "target": "\"Meta\" AND \"Google\" AND \"Tesla\""
+  },
+  {
+    "input": "NLP, AI, machine learning",
+    "target": "\"NLP\" AND \"AI\" AND \"machine learning\""
+  },
+  {
+    "input": "Elon Musk",
+    "target": "\"Elon Musk\""
+  },
+  {
+    "input": "machine learning, deep learning, blockchain",
+    "target": "\"machine learning\" AND \"deep learning\" AND \"blockchain\""
+  },
+  {
+    "input": "OpenAI, Meta, Google",
+    "target": "\"OpenAI\" AND \"Meta\" AND \"Google\""
+  },
+  {
+    "input": "Tesla, OpenAI",
+    "target": "\"Tesla\" AND \"OpenAI\""
+  },
+  {
+    "input": "Andrew Ng, Yann LeCun, Elon Musk",
+    "target": "\"Andrew Ng\" AND \"Yann LeCun\" AND \"Elon Musk\""
+  },
+  {
+    "input": "Google",
+    "target": "\"Google\""
+  },
+  {
+    "input": "deep learning, AI",
+    "target": "\"deep learning\" AND \"AI\""
+  },
+  {
+    "input": "Elon Musk, Andrew Ng, Yann LeCun",
+    "target": "\"Elon Musk\" AND \"Andrew Ng\" AND \"Yann LeCun\""
+  },
+  {
+    "input": "deep learning",
+    "target": "\"deep learning\""
+  },
+  {
+    "input": "deep learning, blockchain",
+    "target": "\"deep learning\" AND \"blockchain\""
+  },
+  {
+    "input": "machine learning, blockchain, AI",
+    "target": "\"machine learning\" AND \"blockchain\" AND \"AI\""
+  },
+  {
+    "input": "Yann LeCun, Elon Musk",
+    "target": "\"Yann LeCun\" AND \"Elon Musk\""
+  },
+  {
+    "input": "Google, Meta, OpenAI",
+    "target": "\"Google\" AND \"Meta\" AND \"OpenAI\""
+  },
+  {
+    "input": "Meta",
+    "target": "\"Meta\""
+  },
+  {
+    "input": "Elon Musk, Yann LeCun",
+    "target": "\"Elon Musk\" AND \"Yann LeCun\""
+  },
+  {
+    "input": "deep learning, machine learning",
+    "target": "\"deep learning\" AND \"machine learning\""
+  },
+  {
+    "input": "Andrew Ng, Elon Musk",
+    "target": "\"Andrew Ng\" AND \"Elon Musk\""
+  },
+  {
+    "input": "AI, NLP",
+    "target": "\"AI\" AND \"NLP\""
+  },
+  {
+    "input": "NLP, deep learning, AI",
+    "target": "\"NLP\" AND \"deep learning\" AND \"AI\""
+  },
+  {
+    "input": "Yann LeCun, Elon Musk",
+    "target": "\"Yann LeCun\" AND \"Elon Musk\""
+  },
+  {
+    "input": "Yann LeCun",
+    "target": "\"Yann LeCun\""
+  },
+  {
+    "input": "Yann LeCun, Andrew Ng",
+    "target": "\"Yann LeCun\" AND \"Andrew Ng\""
+  },
+  {
+    "input": "NLP",
+    "target": "\"NLP\""
+  },
+  {
+    "input": "OpenAI, Tesla",
+    "target": "\"OpenAI\" AND \"Tesla\""
+  },
+  {
+    "input": "Yann LeCun, Elon Musk, Andrew Ng",
+    "target": "\"Yann LeCun\" AND \"Elon Musk\" AND \"Andrew Ng\""
+  },
+  {
+    "input": "Meta, Google, Tesla",
+    "target": "\"Meta\" AND \"Google\" AND \"Tesla\""
+  },
+  {
+    "input": "Tesla",
+    "target": "\"Tesla\""
+  },
+  {
+    "input": "deep learning",
+    "target": "\"deep learning\""
+  },
+  {
+    "input": "deep learning, machine learning, AI",
+    "target": "\"deep learning\" AND \"machine learning\" AND \"AI\""
+  },
+  {
+    "input": "AI",
+    "target": "\"AI\""
+  },
+  {
+    "input": "Andrew Ng, Elon Musk, Yann LeCun",
+    "target": "\"Andrew Ng\" AND \"Elon Musk\" AND \"Yann LeCun\""
+  },
+  {
+    "input": "blockchain, NLP, deep learning",
+    "target": "\"blockchain\" AND \"NLP\" AND \"deep learning\""
+  },
+  {
+    "input": "Meta",
+    "target": "\"Meta\""
+  },
+  {
+    "input": "deep learning, blockchain, AI",
+    "target": "\"deep learning\" AND \"blockchain\" AND \"AI\""
+  },
+  {
+    "input": "Meta",
+    "target": "\"Meta\""
+  },
+  {
+    "input": "blockchain, deep learning",
+    "target": "\"blockchain\" AND \"deep learning\""
+  },
+  {
+    "input": "Meta, Tesla, OpenAI",
+    "target": "\"Meta\" AND \"Tesla\" AND \"OpenAI\""
+  },
+  {
+    "input": "Meta, Google",
+    "target": "\"Meta\" AND \"Google\""
+  },
+  {
+    "input": "OpenAI, Google, Meta",
+    "target": "\"OpenAI\" AND \"Google\" AND \"Meta\""
+  },
+  {
+    "input": "Meta, Google, Tesla",
+    "target": "\"Meta\" AND \"Google\" AND \"Tesla\""
+  },
+  {
+    "input": "AI",
+    "target": "\"AI\""
+  },
+  {
+    "input": "Tesla",
+    "target": "\"Tesla\""
+  },
+  {
+    "input": "OpenAI, Google, Tesla",
+    "target": "\"OpenAI\" AND \"Google\" AND \"Tesla\""
+  },
+  {
+    "input": "Yann LeCun",
+    "target": "\"Yann LeCun\""
+  },
+  {
+    "input": "machine learning",
+    "target": "\"machine learning\""
+  },
+  {
+    "input": "machine learning, blockchain",
+    "target": "\"machine learning\" AND \"blockchain\""
+  },
+  {
+    "input": "machine learning",
+    "target": "\"machine learning\""
+  },
+  {
+    "input": "Andrew Ng, Elon Musk",
+    "target": "\"Andrew Ng\" AND \"Elon Musk\""
+  },
+  {
+    "input": "deep learning, NLP",
+    "target": "\"deep learning\" AND \"NLP\""
+  },
+  {
+    "input": "blockchain, NLP",
+    "target": "\"blockchain\" AND \"NLP\""
+  },
+  {
+    "input": "Andrew Ng, Elon Musk",
+    "target": "\"Andrew Ng\" AND \"Elon Musk\""
+  },
+  {
+    "input": "blockchain",
+    "target": "\"blockchain\""
+  },
+  {
+    "input": "Meta, Google",
+    "target": "\"Meta\" AND \"Google\""
+  },
+  {
+    "input": "Google, Meta",
+    "target": "\"Google\" AND \"Meta\""
+  },
+  {
+    "input": "Tesla, Google",
+    "target": "\"Tesla\" AND \"Google\""
+  },
+  {
+    "input": "Elon Musk",
+    "target": "\"Elon Musk\""
+  },
+  {
+    "input": "Meta, OpenAI",
+    "target": "\"Meta\" AND \"OpenAI\""
+  },
+  {
+    "input": "NLP, machine learning",
+    "target": "\"NLP\" AND \"machine learning\""
+  },
+  {
+    "input": "Tesla, Google",
+    "target": "\"Tesla\" AND \"Google\""
+  },
+  {
+    "input": "Meta, Tesla, OpenAI",
+    "target": "\"Meta\" AND \"Tesla\" AND \"OpenAI\""
+  },
+  {
+    "input": "Google",
+    "target": "\"Google\""
+  },
+  {
+    "input": "deep learning, machine learning, AI",
+    "target": "\"deep learning\" AND \"machine learning\" AND \"AI\""
+  },
+  {
+    "input": "OpenAI, Meta",
+    "target": "\"OpenAI\" AND \"Meta\""
+  },
+  {
+    "input": "Elon Musk",
+    "target": "\"Elon Musk\""
+  },
+  {
+    "input": "Elon Musk",
+    "target": "\"Elon Musk\""
+  },
+  {
+    "input": "OpenAI, Tesla",
+    "target": "\"OpenAI\" AND \"Tesla\""
+  },
+  {
+    "input": "Tesla, Google",
+    "target": "\"Tesla\" AND \"Google\""
+  },
+  {
+    "input": "Andrew Ng, Yann LeCun",
+    "target": "\"Andrew Ng\" AND \"Yann LeCun\""
+  },
+  {
+    "input": "deep learning, AI",
+    "target": "\"deep learning\" AND \"AI\""
+  },
+  {
+    "input": "Google, Tesla",
+    "target": "\"Google\" AND \"Tesla\""
+  },
+  {
+    "input": "machine learning, blockchain",
+    "target": "\"machine learning\" AND \"blockchain\""
+  },
+  {
+    "input": "Elon Musk, Yann LeCun",
+    "target": "\"Elon Musk\" AND \"Yann LeCun\""
+  },
+  {
+    "input": "AI",
+    "target": "\"AI\""
+  },
+  {
+    "input": "Yann LeCun, Andrew Ng",
+    "target": "\"Yann LeCun\" AND \"Andrew Ng\""
+  },
+  {
+    "input": "AI, machine learning",
+    "target": "\"AI\" AND \"machine learning\""
+  },
+  {
+    "input": "machine learning, deep learning, NLP",
+    "target": "\"machine learning\" AND \"deep learning\" AND \"NLP\""
+  },
+  {
+    "input": "Tesla, Meta, OpenAI",
+    "target": "\"Tesla\" AND \"Meta\" AND \"OpenAI\""
+  },
+  {
+    "input": "Google, Tesla",
+    "target": "\"Google\" AND \"Tesla\""
+  },
+  {
+    "input": "Andrew Ng, Elon Musk",
+    "target": "\"Andrew Ng\" AND \"Elon Musk\""
+  },
+  {
+    "input": "Elon Musk, Andrew Ng",
+    "target": "\"Elon Musk\" AND \"Andrew Ng\""
+  },
+  {
+    "input": "blockchain, machine learning, NLP",
+    "target": "\"blockchain\" AND \"machine learning\" AND \"NLP\""
+  },
+  {
+    "input": "OpenAI, Meta",
+    "target": "\"OpenAI\" AND \"Meta\""
+  },
+  {
+    "input": "Elon Musk",
+    "target": "\"Elon Musk\""
+  },
+  {
+    "input": "NLP",
+    "target": "\"NLP\""
+  },
+  {
+    "input": "AI, blockchain, NLP",
+    "target": "\"AI\" AND \"blockchain\" AND \"NLP\""
+  },
+  {
+    "input": "OpenAI, Google, Tesla",
+    "target": "\"OpenAI\" AND \"Google\" AND \"Tesla\""
+  },
+  {
+    "input": "Google",
+    "target": "\"Google\""
+  },
+  {
+    "input": "Yann LeCun, Andrew Ng, Elon Musk",
+    "target": "\"Yann LeCun\" AND \"Andrew Ng\" AND \"Elon Musk\""
+  },
+  {
+    "input": "blockchain, machine learning, AI",
+    "target": "\"blockchain\" AND \"machine learning\" AND \"AI\""
+  },
+  {
+    "input": "Meta, Google",
+    "target": "\"Meta\" AND \"Google\""
+  },
+  {
+    "input": "machine learning, blockchain",
+    "target": "\"machine learning\" AND \"blockchain\""
+  },
+  {
+    "input": "AI, deep learning, machine learning",
+    "target": "\"AI\" AND \"deep learning\" AND \"machine learning\""
+  },
+  {
+    "input": "Google, OpenAI",
+    "target": "\"Google\" AND \"OpenAI\""
+  },
+  {
+    "input": "Yann LeCun, Andrew Ng",
+    "target": "\"Yann LeCun\" AND \"Andrew Ng\""
+  },
+  {
+    "input": "Andrew Ng",
+    "target": "\"Andrew Ng\""
+  },
+  {
+    "input": "Elon Musk, Andrew Ng",
+    "target": "\"Elon Musk\" AND \"Andrew Ng\""
+  },
+  {
+    "input": "Meta, Google",
+    "target": "\"Meta\" AND \"Google\""
+  },
+  {
+    "input": "blockchain, NLP",
+    "target": "\"blockchain\" AND \"NLP\""
+  },
+  {
+    "input": "OpenAI, Meta, Tesla",
+    "target": "\"OpenAI\" AND \"Meta\" AND \"Tesla\""
+  },
+  {
+    "input": "NLP",
+    "target": "\"NLP\""
+  },
+  {
+    "input": "Elon Musk, Yann LeCun",
+    "target": "\"Elon Musk\" AND \"Yann LeCun\""
+  },
+  {
+    "input": "NLP, machine learning, deep learning",
+    "target": "\"NLP\" AND \"machine learning\" AND \"deep learning\""
+  },
+  {
+    "input": "AI, NLP, blockchain",
+    "target": "\"AI\" AND \"NLP\" AND \"blockchain\""
+  },
+  {
+    "input": "Google, Tesla",
+    "target": "\"Google\" AND \"Tesla\""
+  },
+  {
+    "input": "Elon Musk",
+    "target": "\"Elon Musk\""
+  },
+  {
+    "input": "AI, deep learning",
+    "target": "\"AI\" AND \"deep learning\""
+  },
+  {
+    "input": "deep learning",
+    "target": "\"deep learning\""
+  },
+  {
+    "input": "Yann LeCun",
+    "target": "\"Yann LeCun\""
+  },
+  {
+    "input": "deep learning, NLP, blockchain",
+    "target": "\"deep learning\" AND \"NLP\" AND \"blockchain\""
+  },
+  {
+    "input": "OpenAI, Meta, Tesla",
+    "target": "\"OpenAI\" AND \"Meta\" AND \"Tesla\""
+  },
+  {
+    "input": "machine learning, AI, deep learning",
+    "target": "\"machine learning\" AND \"AI\" AND \"deep learning\""
+  },
+  {
+    "input": "OpenAI",
+    "target": "\"OpenAI\""
+  },
+  {
+    "input": "Yann LeCun",
+    "target": "\"Yann LeCun\""
+  },
+  {
+    "input": "NLP",
+    "target": "\"NLP\""
+  },
+  {
+    "input": "deep learning",
+    "target": "\"deep learning\""
+  },
+  {
+    "input": "Elon Musk, Andrew Ng",
+    "target": "\"Elon Musk\" AND \"Andrew Ng\""
+  },
+  {
+    "input": "blockchain, AI, NLP",
+    "target": "\"blockchain\" AND \"AI\" AND \"NLP\""
+  },
+  {
+    "input": "Yann LeCun, Andrew Ng",
+    "target": "\"Yann LeCun\" AND \"Andrew Ng\""
+  },
+  {
+    "input": "Google, Tesla, Meta",
+    "target": "\"Google\" AND \"Tesla\" AND \"Meta\""
+  },
+  {
+    "input": "blockchain, deep learning, NLP",
+    "target": "\"blockchain\" AND \"deep learning\" AND \"NLP\""
+  },
+  {
+    "input": "Meta, Tesla",
+    "target": "\"Meta\" AND \"Tesla\""
+  },
+  {
+    "input": "Andrew Ng, Yann LeCun",
+    "target": "\"Andrew Ng\" AND \"Yann LeCun\""
+  },
+  {
+    "input": "machine learning, blockchain",
+    "target": "\"machine learning\" AND \"blockchain\""
+  },
+  {
+    "input": "Andrew Ng, Elon Musk, Yann LeCun",
+    "target": "\"Andrew Ng\" AND \"Elon Musk\" AND \"Yann LeCun\""
+  },
+  {
+    "input": "Yann LeCun",
+    "target": "\"Yann LeCun\""
+  },
+  {
+    "input": "AI, machine learning, NLP",
+    "target": "\"AI\" AND \"machine learning\" AND \"NLP\""
+  },
+  {
+    "input": "blockchain, AI",
+    "target": "\"blockchain\" AND \"AI\""
+  },
+  {
+    "input": "Google",
+    "target": "\"Google\""
+  },
+  {
+    "input": "Andrew Ng",
+    "target": "\"Andrew Ng\""
+  },
+  {
+    "input": "Meta, OpenAI, Google",
+    "target": "\"Meta\" AND \"OpenAI\" AND \"Google\""
+  },
+  {
+    "input": "NLP",
+    "target": "\"NLP\""
+  },
+  {
+    "input": "Meta",
+    "target": "\"Meta\""
+  },
+  {
+    "input": "AI, machine learning",
+    "target": "\"AI\" AND \"machine learning\""
+  },
+  {
+    "input": "Yann LeCun",
+    "target": "\"Yann LeCun\""
+  },
+  {
+    "input": "deep learning, blockchain",
+    "target": "\"deep learning\" AND \"blockchain\""
+  },
+  {
+    "input": "Meta, Google",
+    "target": "\"Meta\" AND \"Google\""
+  },
+  {
+    "input": "deep learning, AI, machine learning",
+    "target": "\"deep learning\" AND \"AI\" AND \"machine learning\""
+  },
+  {
+    "input": "Google, OpenAI, Tesla",
+    "target": "\"Google\" AND \"OpenAI\" AND \"Tesla\""
+  },
+  {
+    "input": "OpenAI, Meta",
+    "target": "\"OpenAI\" AND \"Meta\""
+  },
+  {
+    "input": "deep learning, blockchain",
+    "target": "\"deep learning\" AND \"blockchain\""
+  },
+  {
+    "input": "Tesla",
+    "target": "\"Tesla\""
+  },
+  {
+    "input": "blockchain, AI",
+    "target": "\"blockchain\" AND \"AI\""
+  },
+  {
+    "input": "Tesla, OpenAI, Meta",
+    "target": "\"Tesla\" AND \"OpenAI\" AND \"Meta\""
+  },
+  {
+    "input": "Tesla, Google, Meta",
+    "target": "\"Tesla\" AND \"Google\" AND \"Meta\""
+  },
+  {
+    "input": "OpenAI",
+    "target": "\"OpenAI\""
+  },
+  {
+    "input": "deep learning",
+    "target": "\"deep learning\""
+  },
+  {
+    "input": "AI, machine learning, NLP",
+    "target": "\"AI\" AND \"machine learning\" AND \"NLP\""
+  },
+  {
+    "input": "AI, NLP",
+    "target": "\"AI\" AND \"NLP\""
+  },
+  {
+    "input": "OpenAI, Tesla, Google",
+    "target": "\"OpenAI\" AND \"Tesla\" AND \"Google\""
+  },
+  {
+    "input": "Meta, Tesla, Google",
+    "target": "\"Meta\" AND \"Tesla\" AND \"Google\""
+  },
+  {
+    "input": "machine learning",
+    "target": "\"machine learning\""
+  },
+  {
+    "input": "Google, Tesla",
+    "target": "\"Google\" AND \"Tesla\""
+  },
+  {
+    "input": "Google, OpenAI",
+    "target": "\"Google\" AND \"OpenAI\""
+  },
+  {
+    "input": "deep learning, machine learning",
+    "target": "\"deep learning\" AND \"machine learning\""
+  },
+  {
+    "input": "AI",
+    "target": "\"AI\""
+  },
+  {
+    "input": "NLP, AI, machine learning",
+    "target": "\"NLP\" AND \"AI\" AND \"machine learning\""
+  },
+  {
+    "input": "AI, NLP, machine learning",
+    "target": "\"AI\" AND \"NLP\" AND \"machine learning\""
+  },
+  {
+    "input": "Google, Tesla",
+    "target": "\"Google\" AND \"Tesla\""
+  },
+  {
+    "input": "Google, Meta",
+    "target": "\"Google\" AND \"Meta\""
+  },
+  {
+    "input": "machine learning, NLP",
+    "target": "\"machine learning\" AND \"NLP\""
+  },
+  {
+    "input": "AI, NLP, blockchain",
+    "target": "\"AI\" AND \"NLP\" AND \"blockchain\""
+  },
+  {
+    "input": "Google",
+    "target": "\"Google\""
+  },
+  {
+    "input": "Meta, Google, Tesla",
+    "target": "\"Meta\" AND \"Google\" AND \"Tesla\""
+  },
+  {
+    "input": "blockchain, deep learning",
+    "target": "\"blockchain\" AND \"deep learning\""
+  },
+  {
+    "input": "AI, deep learning, NLP",
+    "target": "\"AI\" AND \"deep learning\" AND \"NLP\""
+  },
+  {
+    "input": "AI",
+    "target": "\"AI\""
+  },
+  {
+    "input": "NLP, blockchain",
+    "target": "\"NLP\" AND \"blockchain\""
+  },
+  {
+    "input": "Meta, Tesla",
+    "target": "\"Meta\" AND \"Tesla\""
+  },
+  {
+    "input": "AI",
+    "target": "\"AI\""
+  },
+  {
+    "input": "blockchain",
+    "target": "\"blockchain\""
+  },
+  {
+    "input": "Google, Meta",
+    "target": "\"Google\" AND \"Meta\""
+  },
+  {
+    "input": "NLP, AI",
+    "target": "\"NLP\" AND \"AI\""
+  },
+  {
+    "input": "NLP, deep learning",
+    "target": "\"NLP\" AND \"deep learning\""
+  },
+  {
+    "input": "Yann LeCun, Elon Musk",
+    "target": "\"Yann LeCun\" AND \"Elon Musk\""
+  },
+  {
+    "input": "Tesla",
+    "target": "\"Tesla\""
+  },
+  {
+    "input": "Andrew Ng",
+    "target": "\"Andrew Ng\""
+  },
+  {
+    "input": "OpenAI",
+    "target": "\"OpenAI\""
+  },
+  {
+    "input": "Andrew Ng",
+    "target": "\"Andrew Ng\""
+  },
+  {
+    "input": "machine learning, blockchain",
+    "target": "\"machine learning\" AND \"blockchain\""
+  },
+  {
+    "input": "Elon Musk, Andrew Ng, Yann LeCun",
+    "target": "\"Elon Musk\" AND \"Andrew Ng\" AND \"Yann LeCun\""
+  },
+  {
+    "input": "Tesla, Google",
+    "target": "\"Tesla\" AND \"Google\""
+  },
+  {
+    "input": "OpenAI, Meta",
+    "target": "\"OpenAI\" AND \"Meta\""
+  },
+  {
+    "input": "OpenAI, Google",
+    "target": "\"OpenAI\" AND \"Google\""
+  },
+  {
+    "input": "Tesla, Meta, OpenAI",
+    "target": "\"Tesla\" AND \"Meta\" AND \"OpenAI\""
+  },
+  {
+    "input": "OpenAI, Meta, Tesla",
+    "target": "\"OpenAI\" AND \"Meta\" AND \"Tesla\""
+  },
+  {
+    "input": "Yann LeCun",
+    "target": "\"Yann LeCun\""
+  },
+  {
+    "input": "NLP",
+    "target": "\"NLP\""
+  },
+  {
+    "input": "NLP, blockchain, machine learning",
+    "target": "\"NLP\" AND \"blockchain\" AND \"machine learning\""
+  },
+  {
+    "input": "Tesla",
+    "target": "\"Tesla\""
+  },
+  {
+    "input": "Google",
+    "target": "\"Google\""
+  },
+  {
+    "input": "Yann LeCun, Elon Musk",
+    "target": "\"Yann LeCun\" AND \"Elon Musk\""
+  },
+  {
+    "input": "OpenAI",
+    "target": "\"OpenAI\""
+  },
+  {
+    "input": "machine learning, blockchain",
+    "target": "\"machine learning\" AND \"blockchain\""
+  },
+  {
+    "input": "Yann LeCun",
+    "target": "\"Yann LeCun\""
+  },
+  {
+    "input": "Tesla, OpenAI",
+    "target": "\"Tesla\" AND \"OpenAI\""
+  },
+  {
+    "input": "OpenAI, Meta",
+    "target": "\"OpenAI\" AND \"Meta\""
+  },
+  {
+    "input": "Tesla, OpenAI",
+    "target": "\"Tesla\" AND \"OpenAI\""
+  },
+  {
+    "input": "Meta",
+    "target": "\"Meta\""
+  },
+  {
+    "input": "Elon Musk, Yann LeCun, Andrew Ng",
+    "target": "\"Elon Musk\" AND \"Yann LeCun\" AND \"Andrew Ng\""
+  },
+  {
+    "input": "NLP, blockchain",
+    "target": "\"NLP\" AND \"blockchain\""
+  },
+  {
+    "input": "machine learning, NLP",
+    "target": "\"machine learning\" AND \"NLP\""
+  },
+  {
+    "input": "Elon Musk, Yann LeCun",
+    "target": "\"Elon Musk\" AND \"Yann LeCun\""
+  },
+  {
+    "input": "Elon Musk",
+    "target": "\"Elon Musk\""
+  },
+  {
+    "input": "NLP, machine learning",
+    "target": "\"NLP\" AND \"machine learning\""
+  },
+  {
+    "input": "NLP, AI",
+    "target": "\"NLP\" AND \"AI\""
+  },
+  {
+    "input": "Meta, Tesla",
+    "target": "\"Meta\" AND \"Tesla\""
+  },
+  {
+    "input": "blockchain, NLP",
+    "target": "\"blockchain\" AND \"NLP\""
+  },
+  {
+    "input": "Yann LeCun",
+    "target": "\"Yann LeCun\""
+  },
+  {
+    "input": "Yann LeCun, Elon Musk",
+    "target": "\"Yann LeCun\" AND \"Elon Musk\""
+  },
+  {
+    "input": "deep learning",
+    "target": "\"deep learning\""
+  },
+  {
+    "input": "AI, machine learning",
+    "target": "\"AI\" AND \"machine learning\""
+  },
+  {
+    "input": "Meta",
+    "target": "\"Meta\""
+  },
+  {
+    "input": "Tesla, Meta",
+    "target": "\"Tesla\" AND \"Meta\""
+  },
+  {
+    "input": "Meta, Google",
+    "target": "\"Meta\" AND \"Google\""
+  },
+  {
+    "input": "Elon Musk",
+    "target": "\"Elon Musk\""
+  },
+  {
+    "input": "Meta, OpenAI",
+    "target": "\"Meta\" AND \"OpenAI\""
+  },
+  {
+    "input": "Google",
+    "target": "\"Google\""
+  },
+  {
+    "input": "Andrew Ng, Elon Musk, Yann LeCun",
+    "target": "\"Andrew Ng\" AND \"Elon Musk\" AND \"Yann LeCun\""
+  },
+  {
+    "input": "Google, Meta",
+    "target": "\"Google\" AND \"Meta\""
+  },
+  {
+    "input": "Elon Musk",
+    "target": "\"Elon Musk\""
+  },
+  {
+    "input": "Meta",
+    "target": "\"Meta\""
+  },
+  {
+    "input": "OpenAI, Google, Meta",
+    "target": "\"OpenAI\" AND \"Google\" AND \"Meta\""
+  },
+  {
+    "input": "NLP, machine learning, blockchain",
+    "target": "\"NLP\" AND \"machine learning\" AND \"blockchain\""
+  },
+  {
+    "input": "blockchain, deep learning",
+    "target": "\"blockchain\" AND \"deep learning\""
+  },
+  {
+    "input": "deep learning, AI",
+    "target": "\"deep learning\" AND \"AI\""
+  },
+  {
+    "input": "Meta, Google",
+    "target": "\"Meta\" AND \"Google\""
+  },
+  {
+    "input": "Yann LeCun, Elon Musk, Andrew Ng",
+    "target": "\"Yann LeCun\" AND \"Elon Musk\" AND \"Andrew Ng\""
+  },
+  {
+    "input": "machine learning",
+    "target": "\"machine learning\""
+  },
+  {
+    "input": "AI, NLP, blockchain",
+    "target": "\"AI\" AND \"NLP\" AND \"blockchain\""
+  },
+  {
+    "input": "machine learning",
+    "target": "\"machine learning\""
+  },
+  {
+    "input": "deep learning, machine learning",
+    "target": "\"deep learning\" AND \"machine learning\""
+  },
+  {
+    "input": "Elon Musk, Andrew Ng, Yann LeCun",
+    "target": "\"Elon Musk\" AND \"Andrew Ng\" AND \"Yann LeCun\""
+  },
+  {
+    "input": "Yann LeCun",
+    "target": "\"Yann LeCun\""
+  },
+  {
+    "input": "Tesla, Meta",
+    "target": "\"Tesla\" AND \"Meta\""
+  },
+  {
+    "input": "Andrew Ng, Elon Musk",
+    "target": "\"Andrew Ng\" AND \"Elon Musk\""
+  },
+  {
+    "input": "Google, OpenAI, Meta",
+    "target": "\"Google\" AND \"OpenAI\" AND \"Meta\""
+  },
+  {
+    "input": "Elon Musk",
+    "target": "\"Elon Musk\""
+  },
+  {
+    "input": "OpenAI",
+    "target": "\"OpenAI\""
+  },
+  {
+    "input": "Google, Meta",
+    "target": "\"Google\" AND \"Meta\""
+  },
+  {
+    "input": "NLP, deep learning",
+    "target": "\"NLP\" AND \"deep learning\""
+  },
+  {
+    "input": "Meta, OpenAI",
+    "target": "\"Meta\" AND \"OpenAI\""
+  },
+  {
+    "input": "NLP",
+    "target": "\"NLP\""
+  },
+  {
+    "input": "OpenAI, Google, Meta",
+    "target": "\"OpenAI\" AND \"Google\" AND \"Meta\""
+  },
+  {
+    "input": "Google",
+    "target": "\"Google\""
+  },
+  {
+    "input": "AI",
+    "target": "\"AI\""
+  },
+  {
+    "input": "Google, Meta, Tesla",
+    "target": "\"Google\" AND \"Meta\" AND \"Tesla\""
+  },
+  {
+    "input": "Elon Musk",
+    "target": "\"Elon Musk\""
+  },
+  {
+    "input": "Google, Meta",
+    "target": "\"Google\" AND \"Meta\""
+  },
+  {
+    "input": "NLP, deep learning",
+    "target": "\"NLP\" AND \"deep learning\""
+  },
+  {
+    "input": "Andrew Ng, Elon Musk",
+    "target": "\"Andrew Ng\" AND \"Elon Musk\""
+  },
+  {
+    "input": "Elon Musk, Andrew Ng",
+    "target": "\"Elon Musk\" AND \"Andrew Ng\""
+  },
+  {
+    "input": "blockchain",
+    "target": "\"blockchain\""
+  },
+  {
+    "input": "Google, OpenAI, Tesla",
+    "target": "\"Google\" AND \"OpenAI\" AND \"Tesla\""
+  },
+  {
+    "input": "AI, NLP, deep learning",
+    "target": "\"AI\" AND \"NLP\" AND \"deep learning\""
+  },
+  {
+    "input": "Yann LeCun",
+    "target": "\"Yann LeCun\""
+  },
+  {
+    "input": "Meta, Tesla",
+    "target": "\"Meta\" AND \"Tesla\""
+  },
+  {
+    "input": "Yann LeCun, Andrew Ng, Elon Musk",
+    "target": "\"Yann LeCun\" AND \"Andrew Ng\" AND \"Elon Musk\""
+  },
+  {
+    "input": "Andrew Ng",
+    "target": "\"Andrew Ng\""
+  },
+  {
+    "input": "NLP, deep learning, blockchain",
+    "target": "\"NLP\" AND \"deep learning\" AND \"blockchain\""
+  },
+  {
+    "input": "machine learning, NLP, AI",
+    "target": "\"machine learning\" AND \"NLP\" AND \"AI\""
+  },
+  {
+    "input": "Google, Meta, OpenAI",
+    "target": "\"Google\" AND \"Meta\" AND \"OpenAI\""
+  },
+  {
+    "input": "Elon Musk, Andrew Ng",
+    "target": "\"Elon Musk\" AND \"Andrew Ng\""
+  },
+  {
+    "input": "machine learning, deep learning",
+    "target": "\"machine learning\" AND \"deep learning\""
+  },
+  {
+    "input": "NLP, deep learning, machine learning",
+    "target": "\"NLP\" AND \"deep learning\" AND \"machine learning\""
+  },
+  {
+    "input": "Andrew Ng",
+    "target": "\"Andrew Ng\""
+  },
+  {
+    "input": "Google, OpenAI, Tesla",
+    "target": "\"Google\" AND \"OpenAI\" AND \"Tesla\""
+  },
+  {
+    "input": "Meta, Tesla",
+    "target": "\"Meta\" AND \"Tesla\""
+  },
+  {
+    "input": "deep learning, blockchain, machine learning",
+    "target": "\"deep learning\" AND \"blockchain\" AND \"machine learning\""
+  },
+  {
+    "input": "Tesla, Google, OpenAI",
+    "target": "\"Tesla\" AND \"Google\" AND \"OpenAI\""
+  },
+  {
+    "input": "deep learning, machine learning",
+    "target": "\"deep learning\" AND \"machine learning\""
+  },
+  {
+    "input": "Andrew Ng, Yann LeCun",
+    "target": "\"Andrew Ng\" AND \"Yann LeCun\""
+  },
+  {
+    "input": "Andrew Ng",
+    "target": "\"Andrew Ng\""
+  },
+  {
+    "input": "NLP",
+    "target": "\"NLP\""
+  },
+  {
+    "input": "Tesla, OpenAI",
+    "target": "\"Tesla\" AND \"OpenAI\""
+  },
+  {
+    "input": "Yann LeCun",
+    "target": "\"Yann LeCun\""
+  },
+  {
+    "input": "blockchain",
+    "target": "\"blockchain\""
+  },
+  {
+    "input": "blockchain",
+    "target": "\"blockchain\""
+  },
+  {
+    "input": "Andrew Ng, Yann LeCun, Elon Musk",
+    "target": "\"Andrew Ng\" AND \"Yann LeCun\" AND \"Elon Musk\""
+  },
+  {
+    "input": "Google",
+    "target": "\"Google\""
+  },
+  {
+    "input": "Andrew Ng, Yann LeCun",
+    "target": "\"Andrew Ng\" AND \"Yann LeCun\""
+  },
+  {
+    "input": "NLP",
+    "target": "\"NLP\""
+  },
+  {
+    "input": "Elon Musk, Andrew Ng, Yann LeCun",
+    "target": "\"Elon Musk\" AND \"Andrew Ng\" AND \"Yann LeCun\""
+  },
+  {
+    "input": "OpenAI, Google",
+    "target": "\"OpenAI\" AND \"Google\""
+  },
+  {
+    "input": "Tesla",
+    "target": "\"Tesla\""
+  },
+  {
+    "input": "Yann LeCun, Elon Musk, Andrew Ng",
+    "target": "\"Yann LeCun\" AND \"Elon Musk\" AND \"Andrew Ng\""
+  },
+  {
+    "input": "NLP",
+    "target": "\"NLP\""
+  },
+  {
+    "input": "Andrew Ng, Elon Musk",
+    "target": "\"Andrew Ng\" AND \"Elon Musk\""
+  },
+  {
+    "input": "blockchain, machine learning, NLP",
+    "target": "\"blockchain\" AND \"machine learning\" AND \"NLP\""
+  },
+  {
+    "input": "Elon Musk",
+    "target": "\"Elon Musk\""
+  },
+  {
+    "input": "Tesla",
+    "target": "\"Tesla\""
+  },
+  {
+    "input": "machine learning",
+    "target": "\"machine learning\""
+  },
+  {
+    "input": "deep learning, machine learning, blockchain",
+    "target": "\"deep learning\" AND \"machine learning\" AND \"blockchain\""
+  },
+  {
+    "input": "Meta",
+    "target": "\"Meta\""
+  },
+  {
+    "input": "OpenAI, Meta",
+    "target": "\"OpenAI\" AND \"Meta\""
+  },
+  {
+    "input": "Tesla, Meta",
+    "target": "\"Tesla\" AND \"Meta\""
+  },
+  {
+    "input": "Yann LeCun",
+    "target": "\"Yann LeCun\""
+  },
+  {
+    "input": "NLP, AI",
+    "target": "\"NLP\" AND \"AI\""
+  },
+  {
+    "input": "Andrew Ng",
+    "target": "\"Andrew Ng\""
+  },
+  {
+    "input": "blockchain",
+    "target": "\"blockchain\""
+  },
+  {
+    "input": "Google, Meta, OpenAI",
+    "target": "\"Google\" AND \"Meta\" AND \"OpenAI\""
+  },
+  {
+    "input": "NLP, deep learning",
+    "target": "\"NLP\" AND \"deep learning\""
+  },
+  {
+    "input": "NLP",
+    "target": "\"NLP\""
+  },
+  {
+    "input": "Elon Musk, Yann LeCun, Andrew Ng",
+    "target": "\"Elon Musk\" AND \"Yann LeCun\" AND \"Andrew Ng\""
+  },
+  {
+    "input": "OpenAI",
+    "target": "\"OpenAI\""
+  },
+  {
+    "input": "Andrew Ng, Elon Musk, Yann LeCun",
+    "target": "\"Andrew Ng\" AND \"Elon Musk\" AND \"Yann LeCun\""
+  },
+  {
+    "input": "OpenAI",
+    "target": "\"OpenAI\""
+  },
+  {
+    "input": "Elon Musk, Yann LeCun, Andrew Ng",
+    "target": "\"Elon Musk\" AND \"Yann LeCun\" AND \"Andrew Ng\""
+  },
+  {
+    "input": "OpenAI",
+    "target": "\"OpenAI\""
+  },
+  {
+    "input": "AI, machine learning",
+    "target": "\"AI\" AND \"machine learning\""
+  },
+  {
+    "input": "Meta, OpenAI",
+    "target": "\"Meta\" AND \"OpenAI\""
+  },
+  {
+    "input": "Meta, OpenAI",
+    "target": "\"Meta\" AND \"OpenAI\""
+  },
+  {
+    "input": "blockchain",
+    "target": "\"blockchain\""
+  },
+  {
+    "input": "NLP, machine learning, AI",
+    "target": "\"NLP\" AND \"machine learning\" AND \"AI\""
+  },
+  {
+    "input": "AI, blockchain, NLP",
+    "target": "\"AI\" AND \"blockchain\" AND \"NLP\""
+  },
+  {
+    "input": "Google, Meta",
+    "target": "\"Google\" AND \"Meta\""
+  },
+  {
+    "input": "Elon Musk, Andrew Ng",
+    "target": "\"Elon Musk\" AND \"Andrew Ng\""
+  },
+  {
+    "input": "OpenAI, Google, Meta",
+    "target": "\"OpenAI\" AND \"Google\" AND \"Meta\""
+  },
+  {
+    "input": "Tesla, Google",
+    "target": "\"Tesla\" AND \"Google\""
+  },
+  {
+    "input": "Elon Musk, Yann LeCun, Andrew Ng",
+    "target": "\"Elon Musk\" AND \"Yann LeCun\" AND \"Andrew Ng\""
+  },
+  {
+    "input": "Tesla",
+    "target": "\"Tesla\""
+  },
+  {
+    "input": "Andrew Ng, Elon Musk",
+    "target": "\"Andrew Ng\" AND \"Elon Musk\""
+  },
+  {
+    "input": "Meta, Google, OpenAI",
+    "target": "\"Meta\" AND \"Google\" AND \"OpenAI\""
+  },
+  {
+    "input": "AI, blockchain",
+    "target": "\"AI\" AND \"blockchain\""
+  },
+  {
+    "input": "OpenAI, Meta, Tesla",
+    "target": "\"OpenAI\" AND \"Meta\" AND \"Tesla\""
+  },
+  {
+    "input": "NLP, AI",
+    "target": "\"NLP\" AND \"AI\""
+  },
+  {
+    "input": "blockchain",
+    "target": "\"blockchain\""
+  },
+  {
+    "input": "Yann LeCun, Elon Musk, Andrew Ng",
+    "target": "\"Yann LeCun\" AND \"Elon Musk\" AND \"Andrew Ng\""
+  },
+  {
+    "input": "machine learning, NLP, deep learning",
+    "target": "\"machine learning\" AND \"NLP\" AND \"deep learning\""
+  },
+  {
+    "input": "Elon Musk",
+    "target": "\"Elon Musk\""
+  },
+  {
+    "input": "Elon Musk",
+    "target": "\"Elon Musk\""
+  },
+  {
+    "input": "AI",
+    "target": "\"AI\""
+  },
+  {
+    "input": "Meta, Google",
+    "target": "\"Meta\" AND \"Google\""
+  },
+  {
+    "input": "deep learning, AI, machine learning",
+    "target": "\"deep learning\" AND \"AI\" AND \"machine learning\""
+  },
+  {
+    "input": "AI",
+    "target": "\"AI\""
+  },
+  {
+    "input": "Elon Musk, Andrew Ng",
+    "target": "\"Elon Musk\" AND \"Andrew Ng\""
+  },
+  {
+    "input": "Elon Musk",
+    "target": "\"Elon Musk\""
+  },
+  {
+    "input": "deep learning, machine learning",
+    "target": "\"deep learning\" AND \"machine learning\""
+  },
+  {
+    "input": "OpenAI, Meta, Tesla",
+    "target": "\"OpenAI\" AND \"Meta\" AND \"Tesla\""
+  },
+  {
+    "input": "Yann LeCun",
+    "target": "\"Yann LeCun\""
+  },
+  {
+    "input": "AI",
+    "target": "\"AI\""
+  },
+  {
+    "input": "Elon Musk",
+    "target": "\"Elon Musk\""
+  },
+  {
+    "input": "Meta",
+    "target": "\"Meta\""
+  }
+]

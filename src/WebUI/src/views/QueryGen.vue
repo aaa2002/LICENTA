@@ -1,6 +1,6 @@
 <template>
   <v-container class="qGen-page-wrapper">
-    <div><h1>Query Generator</h1></div>
+    <div class="mb-4"><h1>Query Generator</h1></div>
     <v-row>
       <v-col cols="12" md="4">
         <v-card>
@@ -13,11 +13,15 @@
               {{ apiResponse.google }}
             </div>
             <div class="d-flex">
-              <v-btn icon @click="copyToClipboard(apiResponse.google)">
-                <v-icon>mdi-content-copy</v-icon>
+              <v-btn
+                icon
+                class="mr-1"
+                @click="copyToClipboard(apiResponse.google)"
+              >
+                <v-icon size="x-small">mdi-content-copy</v-icon>
               </v-btn>
               <v-btn icon @click="openInGoogle(apiResponse.google)">
-                <v-icon>mdi-web</v-icon>
+                <v-icon size="x-small">mdi-web</v-icon>
               </v-btn>
             </div>
           </v-card-text>
@@ -34,11 +38,15 @@
               {{ apiResponse.bing }}
             </div>
             <div class="d-flex">
-              <v-btn icon @click="copyToClipboard(apiResponse.bing)">
-                <v-icon>mdi-content-copy</v-icon>
+              <v-btn
+                class="mr-1"
+                icon
+                @click="copyToClipboard(apiResponse.bing)"
+              >
+                <v-icon size="x-small">mdi-content-copy</v-icon>
               </v-btn>
               <v-btn icon @click="openInBing(apiResponse.bing)">
-                <v-icon>mdi-web</v-icon>
+                <v-icon size="x-small">mdi-web</v-icon>
               </v-btn>
             </div>
           </v-card-text>
@@ -55,32 +63,82 @@
               {{ apiResponse.duckduckgo }}
             </div>
             <div class="d-flex">
-              <v-btn icon @click="copyToClipboard(apiResponse.duckduckgo)">
-                <v-icon>mdi-content-copy</v-icon>
+              <v-btn
+                icon
+                class="mr-1"
+                @click="copyToClipboard(apiResponse.duckduckgo)"
+              >
+                <v-icon size="x-small">mdi-content-copy</v-icon>
               </v-btn>
               <v-btn icon @click="openInDuckDuckGo(apiResponse.duckduckgo)">
-                <v-icon>mdi-web</v-icon>
+                <v-icon size="x-small">mdi-web</v-icon>
               </v-btn>
             </div>
           </v-card-text>
         </v-card>
       </v-col>
-      <!-- <v-col cols="12" md="6">
+      <v-col cols="12" md="6">
         <v-card>
-          <v-card-title>Detector Card 4</v-card-title>
+          <v-card-title>Web Result Recommendations</v-card-title>
+          <v-card-subtitle
+            >For further reading, on the topic: {{ userInput }}</v-card-subtitle
+          >
           <v-card-text>
-            This is the content of the fourth detector card.
+            <v-list>
+              <v-list-item
+                v-for="(item, index) in recommendations"
+                class="mb-2"
+                :key="index"
+              >
+                <v-list-item-content>
+                  <v-list-item-title class="font-weight-bold text-lg mb-1">
+                    <a :href="item.href" target="_blank">
+                      {{ item.title }}
+                    </a>
+                  </v-list-item-title>
+                  <v-list-item-subtitle>{{ item.body }}</v-list-item-subtitle>
+                </v-list-item-content>
+              </v-list-item>
+            </v-list>
           </v-card-text>
         </v-card>
       </v-col>
       <v-col cols="12" md="6">
         <v-card>
-          <v-card-title>Detector Card 5</v-card-title>
+          <v-card-title>Article Recommendations</v-card-title>
+          <v-card-subtitle>
+            For further reading, on the topic: {{ userInput }}
+          </v-card-subtitle>
           <v-card-text>
-            This is the content of the fifth detector card.
+            <v-list>
+              <v-list-item
+                v-for="(article, index) in articles"
+                :key="index"
+                class="mb-4"
+              >
+                <v-list-item-content>
+                  <v-list-item-title class="font-weight-bold text-lg mb-1">
+                    <a
+                      :href="article.url.replace('abs', 'pdf')"
+                      target="_blank"
+                    >
+                      {{ article.title }}
+                    </a>
+                  </v-list-item-title>
+
+                  <v-list-item-subtitle class="text-body-2 mb-1">
+                    <strong>Authors:</strong> {{ article.authors.join(", ") }}
+                  </v-list-item-subtitle>
+
+                  <v-list-item-subtitle class="text-body-2">
+                    <strong>Abstract:</strong> {{ article.abstract }}
+                  </v-list-item-subtitle>
+                </v-list-item-content>
+              </v-list-item>
+            </v-list>
           </v-card-text>
         </v-card>
-      </v-col> -->
+      </v-col>
     </v-row>
 
     <!-- <v-row>
@@ -135,6 +193,8 @@ const apiResponse = ref({
 });
 const userInput = ref("");
 const isLoading = ref(false);
+const recommendations = ref([]);
+const articles = ref([]);
 
 const getResult = () => {
   isLoading.value = true;
@@ -151,6 +211,28 @@ const getResult = () => {
       apiResponse.value = "Error: " + error.message;
       isLoading.value = false;
     });
+
+  axios
+    .post("http://localhost:8000/get-recommendations", {
+      inputText: userInput.value,
+    })
+    .then((response) => {
+      recommendations.value = response.data.results;
+    })
+    .catch((error) => {
+      console.error("There was an error fetching recommendations!", error);
+    });
+
+  axios
+    .post("http://localhost:8000/get-articles", {
+      inputText: userInput.value,
+    })
+    .then((response) => {
+      articles.value = response.data.results;
+    })
+    .catch((error) => {
+      console.error("There was an error fetching articles!", error);
+    });
 };
 </script>
 
@@ -159,6 +241,17 @@ const getResult = () => {
   display: flex;
   flex-direction: column;
   height: 100%;
+
+  .v-btn--icon {
+    width: 24px !important;
+    height: 24px !important;
+    min-width: 24px !important;
+    min-height: 24px !important;
+    padding: 0;
+    border-radius: 8px;
+    box-shadow: none !important;
+    border: 1px solid rgb(var(--v-theme-on-surface-variant)) !important;
+  }
 }
 
 .qGen-page-wrapper .user-input-field .v-input__details {
