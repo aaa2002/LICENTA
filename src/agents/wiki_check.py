@@ -9,6 +9,7 @@ class WikiAgent:
         try:
             results = wikipedia.search(term)
             if results:
+                print(f"[LOG] --- [wiki_check.py] - Wikipedia <{term}> SUMMARY:", wikipedia.summary(results[0], sentences=3))
                 return wikipedia.summary(results[0], sentences=3)
             return ""
         except Exception:
@@ -19,6 +20,9 @@ class WikiAgent:
         doc2 = self.nlp(text2)
         keywords1 = {token.lemma_ for token in doc1 if token.pos_ in ['NOUN', 'PROPN', 'VERB']}
         keywords2 = {token.lemma_ for token in doc2 if token.pos_ in ['NOUN', 'PROPN', 'VERB']}
+
+        print("[LOG] --- [wiki_check.py] - Overlap 1:", keywords1)
+        print("[LOG] --- [wiki_check.py] - Overlap 2:", keywords2)
         overlap = keywords1 & keywords2
         return len(overlap) / max(len(keywords1), 1)
 
@@ -26,29 +30,25 @@ class WikiAgent:
         doc = self.nlp(text)
         candidates = set()
 
-        # Named entities that are likely to have wiki pages
         for ent in doc.ents:
             if ent.label_ in ("PERSON", "ORG", "GPE", "EVENT", "WORK_OF_ART"):
                 candidates.add(ent.text.strip())
 
-        # Noun chunks (multi-word phrases)
         for chunk in doc.noun_chunks:
             if len(chunk.text.split()) > 1:
                 candidates.add(chunk.text.strip())
 
-        # Also include important standalone nouns and subjects
         for token in doc:
             if token.pos_ in ("NOUN", "PROPN") and token.dep_ in ("nsubj", "dobj", "attr", "ROOT"):
                 if len(token.text) > 2 and token.is_alpha:
                     candidates.add(token.text.strip())
 
-        # Clean and normalize
         cleaned = {term.title() for term in candidates if term.isascii()}
         return list(cleaned)
 
     def analyze(self, text, web_text=None):
         search_terms = self.extract_search_terms(text)
-        print("Wikipedia search terms:", search_terms)
+        # print("[LOG] --- [wiki_check.py] - Wikipedia search terms:", search_terms)
 
         wiki_facts = " ".join([self.search_wikipedia(term) for term in search_terms])
 

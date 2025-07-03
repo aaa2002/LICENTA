@@ -16,19 +16,15 @@ class DbPediaAgent:
         )
         raw = query_ollama(prompt).strip()
 
-        # Remove markdown/code blocks
         if raw.startswith("```"):
             raw = raw.strip("`").strip()
 
-        # Remove any prefixed explanations
         raw = re.sub(r"(?i)^here is the sparql query:.*?\n", "", raw).strip()
 
-        # Fix malformed FILTER clause
         raw = raw.replace('FILTER lang(', 'FILTER (lang(')
         raw = raw.replace('FILTER (lang(?abstract) = "en" .', 'FILTER (lang(?abstract) = "en") .')
         raw = raw.replace('FILTER (lang(?abs) = "en" .', 'FILTER (lang(?abs) = "en") .')
 
-        # Ensure query ends with properly balanced braces
         if raw.count("{") > raw.count("}"):
             raw += " }" * (raw.count("{") - raw.count("}"))
 
@@ -73,7 +69,6 @@ class DbPediaAgent:
                 return ""
             if len(results) == 1:
                 return wikipedia.summary(results[0], sentences=3)
-            # Try direct match
             try:
                 return wikipedia.summary(term, sentences=3)
             except wikipedia.DisambiguationError:

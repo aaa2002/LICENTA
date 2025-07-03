@@ -41,10 +41,7 @@ async def predict(data: InputData):
 async def generate_query(data: InputData):
     text = data.text
 
-    entities = extractor.extract(text)
-    print(f"Extracted Entities: {entities}")
-
-    transformed_query = query_generator.generate(entities)
+    transformed_query = query_generator.generate(text)
     print(f"Transformed Query: {transformed_query}")
 
     return transformed_query
@@ -53,7 +50,7 @@ async def generate_query(data: InputData):
 async def get_recommendations(data: RecommendationsInputData):
     input_text = "fake real " + data.inputText
 
-    search_results = get_search_results_complete(input_text, 30)
+    search_results = get_search_results_complete(input_text, 10)
 
     top_5 = get_top_5_similar_articles(input_text, search_results)
 

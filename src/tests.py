@@ -6,24 +6,20 @@ import time
 from tqdm import tqdm
 
 def run_tests(input_csv, output_csv):
-    # Load data
     print(f"\nLoading test data from {input_csv}...")
     df = pd.read_csv(input_csv)
 
-    # Convert numeric labels if present
     if set(df['label'].unique()).issubset({0, 1, '0', '1'}):
         df['true_label'] = df['label'].map({'0': 'fake', 0: 'fake', '1': 'real', 1: 'real'})
     else:
         df['true_label'] = df['label']
 
-    # Initialize agent with timing
     print("Initializing FakeNewsAgent...")
     start_time = time.time()
     agent = StreamingFakeNewsAgent()
     init_time = time.time() - start_time
     print(f"Agent initialized in {init_time:.2f} seconds")
 
-    # Process each text with progress bar
     results = []
     print("\nRunning predictions...")
     for _, row in tqdm(df.iterrows(), total=len(df)):
@@ -51,29 +47,23 @@ def run_tests(input_csv, output_csv):
                 'error': str(e)
             })
 
-    # Create results dataframe
     results_df = pd.DataFrame(results)
 
-    # Calculate correctness (skip errored predictions)
     results_df['correct'] = results_df.apply(
         lambda x: str(x['true_label']).lower() == str(x['predicted_label']).lower()
         if x['error'] is None else None,
         axis=1
     )
 
-    # Save results with timestamp
     results_df.to_csv(output_csv, index=False)
     print(f"\nResults saved to {output_csv}")
 
-    # Calculate and print metrics
     valid_predictions = results_df[results_df['error'].isna()]
 
     if len(valid_predictions) > 0:
-        # Basic metrics
         accuracy = valid_predictions['correct'].mean()
         error_rate = 1 - (len(valid_predictions) / len(results_df))
 
-        # Precision, recall, F1
         y_true = valid_predictions['true_label'].str.lower()
         y_pred = valid_predictions['predicted_label'].str.lower()
 
@@ -88,7 +78,6 @@ def run_tests(input_csv, output_csv):
         print(f"Recall: {recall:.2f}")
         print(f"F1 Score: {f1:.2f}")
 
-        # Confidence analysis
         print("\n=== Confidence Analysis ===")
         print("Average confidence for correct predictions: "
               f"{valid_predictions[valid_predictions['correct']]['confidence'].mean():.2f}")
@@ -97,7 +86,6 @@ def run_tests(input_csv, output_csv):
         print("Average confidence for incorrect predictions: "
               f"{incorrect['confidence'].mean():.2f}")
 
-        # Confusion matrix
         print("\n=== Confusion Matrix ===")
         print(pd.crosstab(
             valid_predictions['true_label'].str.lower(),
@@ -109,7 +97,6 @@ def run_tests(input_csv, output_csv):
     else:
         print("\nNo valid predictions to evaluate!")
 
-    # Print error summary if any
     if len(results_df[~results_df['error'].isna()]) > 0:
         print("\n=== Prediction Errors ===")
         print(f"Total errors: {len(results_df[~results_df['error'].isna()])}")

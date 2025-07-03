@@ -1,9 +1,7 @@
 import os
 import pandas as pd
 
-# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-# Handle FAKE News Processing
-# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# FAKE NEWS data
 
 file_paths_fake = [
     '../../Datasets/Fake.csv',
@@ -52,14 +50,11 @@ for i in range(1, 6):
     df_temp = df_temp[['text', 'truth']]
     df_modified = pd.concat([df_modified, df_temp], ignore_index=True)
 
-# Ensure column names are lowercase and correct
 df_modified.columns = ['text', 'truth']
 df_modified.to_csv(output_file_fake, index=False)
 print(f"Fake News output: {output_file_fake}")
 
-# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-# Handle REAL News Processing
-# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# REAL NEWS data
 
 file_paths_real = [
     '../../Datasets/True.csv',
@@ -108,7 +103,6 @@ for i in range(1, 6):
     df_temp = df_temp[['text', 'truth']]
     df_modified = pd.concat([df_modified, df_temp], ignore_index=True)
 
-# Ensure column names are lowercase and correct
 df_modified.columns = ['text', 'truth']
 df_modified.to_csv(output_file_real, index=False)
 print(f"Real News output: {output_file_real}")

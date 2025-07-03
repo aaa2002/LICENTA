@@ -2,10 +2,6 @@ import requests
 import xml.etree.ElementTree as ET
 
 def search_arxiv(query, max_results=5):
-    """
-    Searches arXiv for a given query.
-    Returns a list of papers with title, abstract, authors, and URL.
-    """
     base_url = "http://export.arxiv.org/api/query"
     params = {
         "search_query": f"ti:{query}",
@@ -24,10 +20,6 @@ def search_arxiv(query, max_results=5):
         return []
 
 def parse_arxiv_response(xml_text):
-    """
-    Parses the Atom XML response from arXiv.
-    Extracts: title, abstract, URL, and authors.
-    """
     root = ET.fromstring(xml_text)
     ns = {'atom': 'http://www.w3.org/2005/Atom'}
     entries = []

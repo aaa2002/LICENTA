@@ -2,7 +2,6 @@ import json
 import re
 import requests
 
-# === LLaMA3: Query Helper ===
 def query_ollama(prompt: str, model="llama3"):
     try:
         response = requests.post(
@@ -14,7 +13,6 @@ def query_ollama(prompt: str, model="llama3"):
     except Exception as e:
         return f"[ERROR] {e}"
 
-# === Step 1: Turn claim into question ===
 def claim_to_question(claim: str):
     prompt = (
         "You are an assistant that reformulates claims into questions.\n\n"
@@ -35,7 +33,6 @@ def claim_to_question(claim: str):
     )
     return query_ollama(prompt)
 
-# === Step 4: Send to LLM to Evaluate Graphs ===
 def compare_graphs_llm(user_claim, user_triplets, web_triplets, model="llama3"):
     prompt = (
         "You are a reasoning agent that checks if a claim is factually correct based on extracted knowledge.\n\n"

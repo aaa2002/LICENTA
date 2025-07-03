@@ -15,12 +15,16 @@ class Aggregator(Runnable):
         scraper = input["scraper_result"]
         coherence = input["coherence_result"]
 
-        # Apply weights
+        fn_label = fn["label"] if "label" in fn else "fake"
+        wiki_label = wiki["label"] if "label" in wiki else "fake"
+        coherence_label = coherence["label"] if "label" in coherence else "fake"
+        scraper_label = scraper["label"] if "label" in scraper else "fake"
+
         weighted_score = (
-            label_to_bool(fn["label"]) * fn["confidence"] * 0.19 +
-            label_to_bool(wiki["label"]) * wiki["confidence"] * 0.23 +
-            label_to_bool(coherence["label"]) * coherence["confidence"] * 0.17 +
-            label_to_bool(scraper["label"]) * scraper["confidence"] * 0.41
+            label_to_bool(fn_label) * fn["confidence"] * 0.19 +
+            label_to_bool(wiki_label) * wiki["confidence"] * 0.23 +
+            label_to_bool(coherence_label) * coherence["confidence"] * 0.17 +
+            label_to_bool(scraper_label) * scraper["confidence"] * 0.41
         )
 
         final_label = float_to_label(weighted_score, threshold=0.41)

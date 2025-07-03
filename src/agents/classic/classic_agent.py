@@ -29,7 +29,6 @@ class StreamingFakeNewsAgent:
             raise RuntimeError(f"Initialization failed: {str(e)}")
 
     def analyze(self, text, web_text=None):
-        """Analyze text with streaming-compatible prediction"""
 
         if web_text:
             success = self.update(web_text, 'real')
@@ -59,24 +58,18 @@ class StreamingFakeNewsAgent:
             }
 
     def update(self, text, true_label):
-        """Update model with new streaming data"""
         try:
-            # Normalize true_label
             if str(true_label) in ['0', '1']:
                 true_label = 'fake' if str(true_label) == '0' else 'real'
 
-            # Transform input
             X = self.vectorizer.transform([text])
             y = self.label_encoder.transform([true_label])
 
-            # Dynamically get class list
             class_labels = list(self.label_encoder.transform(self.label_encoder.classes_))
             class_labels = sorted(set(class_labels))  # Ensure no weird order
 
-            # Online learning update
             self.model.partial_fit(X, y, classes=class_labels)
 
-            # Save updated model
             joblib.dump(self.model, "src/agents/classic/saved_models/online_fake_news_model.joblib")
 
             return True
@@ -89,18 +82,14 @@ class StreamingFakeNewsAgent:
             return False
 
     def batch_update(self, texts, labels):
-        """Update model with a batch of new data"""
         try:
-            # Convert labels
             labels = [('fake' if str(l) in ['0', 'fake'] else 'real') for l in labels]
 
             X = self.vectorizer.transform(texts)
             y = self.label_encoder.transform(labels)
 
-            # Online batch update
             self.model.partial_fit(X, y, classes=[0, 1])
 
-            # Save updated model
             joblib.dump(self.model, "./saved_models/online_fake_news_model.joblib")
 
             return True

@@ -96,7 +96,7 @@
                       {{ item.title }}
                     </a>
                   </v-list-item-title>
-                  <v-list-item-subtitle>{{ item.body }}</v-list-item-subtitle>
+                  <v-list-item-subtitle> <span v-html="item.body"></span></v-list-item-subtitle>
                 </v-list-item-content>
               </v-list-item>
             </v-list>

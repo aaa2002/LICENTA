@@ -7,7 +7,6 @@ import json
 def main_pipeline(user_claim, web_text=None, logging=True):
     print(f"[LOG] --- [pipeline.py] - Claim: {user_claim}")
 
-    # Extract relations
     tokenizer, model = load_re_model()
     print("[LOG] --- [pipeline.py] - Extracting triplets...")
     user_rels = extract_relations(user_claim, tokenizer, model)
@@ -16,7 +15,6 @@ def main_pipeline(user_claim, web_text=None, logging=True):
     print(f"[LOG] --- [pipeline.py] - Claim Relations: {user_rels}")
     print(f"[LOG] --- [pipeline.py] - Web Relations: {web_rels[:5]}...")
 
-    # Verdict from LLM
     try:
         verdict = compare_graphs_llm(user_claim, user_rels, web_rels)
     except Exception as e:

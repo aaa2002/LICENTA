@@ -42,7 +42,7 @@ const sidebarOpen = ref(false);
 const navItems = [
   { title: "Home", route: "/" },
   { title: "Detector", route: "/detector" },
-  { title: "Query Generator", route: "/query-generator" },
+  { title: "Human In The Loop", route: "/query-generator" },
 ];
 
 const theme = useTheme();

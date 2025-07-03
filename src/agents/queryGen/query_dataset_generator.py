@@ -1,35 +1,51 @@
 import json
-import random
+import joblib
+import re
+import torch
+from transformers import T5Tokenizer, T5ForConditionalGeneration
 
-SAMPLE_ENTITIES = {
-    'technology': ['machine learning', 'AI', 'deep learning', 'NLP', 'blockchain'],
-    'organizations': ['OpenAI', 'Google', 'Meta', 'Tesla'],
-    'people': ['Elon Musk', 'Yann LeCun', 'Andrew Ng'],
-}
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-TEMPLATE_QUERIES = {
-    'google': lambda es: ' AND '.join([f'"{e}"' for e in es]),
-    'bing': lambda es: ' OR '.join([f'"{e}"' for e in es]),
-    'duckduckgo': lambda es: '(' + ' OR '.join([f'"{e}"' for e in es]) + ')'
-}
+model = joblib.load("src/agents/queryGen/querygen_model.joblib")
+model.to(device).eval()
 
+tokenizer = T5Tokenizer.from_pretrained("src/agents/queryGen/querygen_model")
 
-def generate_examples(num=1000):
-    examples = []
-    for i in range(num):
-        category = random.choice(list(SAMPLE_ENTITIES.keys()))
-        entities = random.sample(SAMPLE_ENTITIES[category], random.randint(1, 3))
+RE_GOOGLE    = re.compile(r'"google"\s*:\s*"([^"]*)"', re.IGNORECASE)
+RE_BING      = re.compile(r'"bing"\s*:\s*"([^"]*)"', re.IGNORECASE)
+RE_DUCKDUCKGO= re.compile(r'"duckduckgo"\s*:\s*"([^"]*)"', re.IGNORECASE)
 
-        queries = {k: fn(entities) for k, fn in TEMPLATE_QUERIES.items()}
-        examples.append({
-            'input': ', '.join(entities),
-            'target': queries['google']  # you can change to other engines
-        })
-    return examples
+def generate_query(headline: str) -> dict:
+    input_str = "generate queries: " + headline
+    toks = tokenizer(input_str, return_tensors="pt", truncation=True, padding=True)
+    input_ids = toks.input_ids.to(device)
+    attention_mask = toks.attention_mask.to(device)
 
+    out_ids = model.generate(
+        input_ids=input_ids,
+        attention_mask=attention_mask,
+        max_length=64,
+        num_beams=4,
+        early_stopping=True
+    )
 
-def save_dataset(path='query_generation_dataset.json', num=1000):
-    data = generate_examples(num)
-    with open(path, 'w') as f:
-        json.dump(data, f, indent=2)
-    print(f"Saved {len(data)} examples to {path}")
+    raw = tokenizer.decode(out_ids[0].cpu(), skip_special_tokens=False)
+    print("raw decoded:", repr(raw))
+
+    cleaned = raw.replace("<pad>", "").strip()
+    cleaned = cleaned.replace("<unk>", '"')
+    print("cleaned decoded:", repr(cleaned))
+
+    def extract(regex):
+        m = regex.search(cleaned)
+        return m.group(1) if m else ""
+
+    google_q    = extract(RE_GOOGLE)
+    bing_q      = extract(RE_BING)
+    duckduckgo_q= extract(RE_DUCKDUCKGO)
+
+    return {
+        "google": google_q,
+        "bing":   bing_q,
+        "duckduckgo": duckduckgo_q
+    }

@@ -3,7 +3,7 @@ import requests
 SYSTEM_PROMPT = (
     "You are a helpful assistant that evaluates text for coherence. "
     "When given a paragraph, your task is to determine if the ideas flow logically, are well-connected, and make sense overall.\n\n"
-    # This was added for context. otherwise it was marking single sentences as incoherent.
+    # This was added for context. otherwise it was marking single sentences as incoherent. TODO: mention in documentation
     "It is not important if the text is short or long, but rather if it has good sentence structure. If there is a singular sentence/question, that can be marked as coherent if it makes sense.\n\n"
     "Respond in json format:\n"
     "{\n"
