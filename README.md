@@ -1,6 +1,11 @@
 # LICENTA
 
-This folder contains everything needed to run the web application (frontend + backend) and the LLM‑powered pipeline that uses an Ollama model.
+
+> **Important:** Make sure you are on the `official/v3` branch before following the steps below:
+> ```bash
+> cd /home/alex/VSC/LICENTA
+> git checkout official/v3
+> ```
 
 ---
 
