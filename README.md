@@ -35,7 +35,7 @@ ollama pull llama3
 Backend code lives in `Webapp/backend/` (Django project `ttlbackend` and app `graph`).
 
 ```bash
-cd /home/alex/VSC/LICENTA/Webapp/backend
+cd /Webapp/backend
 
 # (optional but recommended)
 python -m venv .venv
@@ -57,7 +57,7 @@ The API will be available on `http://localhost:8000/`.
 Frontend code lives in `Webapp/ttl-graph-app/` (Vue 3 + Vite).
 
 ```bash
-cd /home/alex/VSC/LICENTA/Webapp/ttl-graph-app
+cd /Webapp/ttl-graph-app
 npm install
 npm run dev
 ```
@@ -78,7 +78,7 @@ Before running anything in `take2/`, make sure:
 - You have Python dependencies installed (example, from one of the requirements files):
 
 ```bash
-cd /home/alex/VSC/LICENTA/take2
+cd /take2
 python -m venv .venv
 source .venv/bin/activate
 
@@ -95,7 +95,7 @@ Example entry points you may want to run from `take2/`:
 Run Streamlit UI (example):
 
 ```bash
-cd /home/alex/VSC/LICENTA/take2
+cd /take2
 source .venv/bin/activate
 streamlit run streamlit_app/streamlit_app.py
 ```
