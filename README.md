@@ -126,46 +126,33 @@ The project’s code expects Ollama at:
 - **URL**: `http://localhost:11434/api/generate`
 - **Model name**: `llama3`
 
-### 4.2. Run Ollama as a systemd service (recommended)
+For development it is usually enough to keep `ollama serve` running in a terminal.  
+If you want it to start automatically on boot, you can still create a custom `systemd` service yourself following the official Ollama/Linux documentation.
 
-To keep Ollama running automatically in the background on Linux, create a custom systemd service.  
-Run:
+---
 
-```bash
-sudo nano /etc/systemd/system/ollama-local.service
-```
+## 5. Delta tables and Apache Spark usage
 
-Paste something like:
+Parts of the `take2/` pipeline (for example `dataset_to_delta.py`, `silver_hop.py`, and the `streamlit_app`) use:
 
-```ini
-[Unit]
-Description=Ollama LLM Server
-After=network.target
+- **Apache Spark** (via `pyspark`) for large‑scale data processing.
+- **Delta Lake** tables (via the `delta-spark` Python package) stored under the `take2/delta/` folder (`all_news`, `fake_news`, `real_news`, `silver_cleaned_news`).
 
-[Service]
-Type=simple
-User=YOUR_USERNAME
-WorkingDirectory=/home/YOUR_USERNAME
-ExecStart=/usr/bin/ollama serve
-Restart=always
-RestartSec=5
+These are mainly used to **prepare and clean the fake/real news datasets** and to feed the Streamlit exploration app.  
+If you only want to **run the webapp + Django backend + Ollama‑powered inference on new claims**, you do **not** need Spark/Delta; the precomputed Delta tables already exist in `take2/delta/`.
 
-[Install]
-WantedBy=multi-user.target
-```
+You only need Spark/Delta if:
 
-Replace `YOUR_USERNAME` and `ExecStart` path if `ollama` is installed somewhere else (run `which ollama` to check).
+- You want to **rebuild or modify** the datasets (e.g. run `dataset_to_delta.py` or `silver_hop.py`).
+- You want to run the **full Streamlit app** that reads directly from the Delta tables using Spark.
 
-Then enable and start the service:
+To install Spark/Delta dependencies (inside the same `take2` virtualenv):
 
 ```bash
-sudo systemctl daemon-reload
-sudo systemctl enable ollama-local
-sudo systemctl start ollama-local
-
-# Check status and logs
-systemctl status ollama-local
-journalctl -u ollama-local -f
+pip install pyspark delta-spark
 ```
 
-With this in place, Ollama will start on boot and stay running in the background, so all scripts in `take2/` and the rest of the project can use the `llama3` model without manual intervention.
+Useful references:
+
+- **Apache Spark**: https://spark.apache.org/
+- **Delta Lake (delta-spark)**: https://delta.io/
